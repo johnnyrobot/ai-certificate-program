@@ -298,7 +298,7 @@ def meta_band(c):
       <div class="meta-band">
         <div class="m"><span class="k">Contact hours</span><span class="v">{c["hours"]} hrs</span></div>
         <div class="m"><span class="k">Credit equivalent</span><span class="v">{c["unitEquivalent"]}-unit</span></div>
-        <div class="m"><span class="k">Prerequisite</span><span class="v">Prerequisite: {html.escape(prereq)}</span></div>
+        <div class="m"><span class="k">Prerequisite</span><span class="v">{html.escape(prereq)}</span></div>
         <div class="m"><span class="k">Length</span><span class="v">{16} weeks</span></div>
       </div>
     </div>'''

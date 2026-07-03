@@ -17,8 +17,8 @@
 
   // ---- sort ----
   let sortKey = null, sortDir = 1;
-  table.querySelectorAll(".th-sort[data-sort]").forEach(th => th.addEventListener("click", () => {
-    const k = th.dataset.sort;
+  table.querySelectorAll(".th-sort[data-sort]").forEach(btn => btn.addEventListener("click", () => {
+    const k = btn.dataset.sort;
     sortDir = sortKey === k ? -sortDir : 1; sortKey = k;
     const val = r => k === "occ" ? r.querySelector(".occ").textContent.toLowerCase()
                                  : parseFloat(r.dataset[k === "median" ? "median" : k]);
@@ -59,7 +59,7 @@
     clearTimeout(to);
     const j = await res.json(); if (!j.success) throw new Error("ckan");
     const by = {}; j.result.records.forEach(r => by[r.soc] = r);
-    let n = 0, period = "";
+    let n = 0;
     rows.forEach(r => {
       const rec = by[r.dataset.soc]; if (!rec) return;
       const med = parseFloat(String(rec.median).replace(/[,$]/g, ""));
