@@ -28,13 +28,18 @@ def percentiles(soc):
         r=ckan_sql(sql)
         if not r: return None,None
         row=r[0]
-        # BLS top-codes the highest percentiles for top earners (stored null) at the
-        # OEWS annual top code $239,200 — substitute it so the band shows "$239,200+".
-        def f(k):
+        # OEWS top-codes only the HIGHEST percentiles for top earners (stored null) at the
+        # annual top code $239,200 — substitute it there so the band shows "$239,200+".
+        # A null low/mid percentile is a different suppression → treat the band as unavailable.
+        def f(k, cap_ok):
             v=row[k]
-            if v is None or str(v).strip() in ("","None"): return TOP_CODE
+            if v is None or str(v).strip() in ("","None"):
+                return TOP_CODE if cap_ok else None
             return int(round(float(str(v).replace(",","").replace("$",""))))
-        return {"p10":f("p10"),"p25":f("p25"),"p50":f("p50"),"p75":f("p75"),"p90":f("p90")}, f'{row["Year"]} {row["Quarter"]}'
+        p10,p25,p50=f("p10",False),f("p25",False),f("p50",False)
+        p75,p90=f("p75",True),f("p90",True)
+        if None in (p10,p25,p50): return None,None
+        return {"p10":p10,"p25":p25,"p50":p50,"p75":p75,"p90":p90}, f'{row["Year"]} {row["Quarter"]}'
     except Exception as e:
         print("percentile fetch failed for",soc,e); return None,None
 def bls_national():
