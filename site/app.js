@@ -22,7 +22,10 @@
     sortDir = sortKey === k ? -sortDir : 1; sortKey = k;
     const val = r => k === "occ" ? r.querySelector(".occ").textContent.toLowerCase()
                                  : parseFloat(r.dataset[k === "median" ? "median" : k]);
-    pairs().sort((a, b) => (val(a[0]) > val(b[0]) ? 1 : -1) * sortDir)
+    pairs().sort((a, b) => {
+             const va = val(a[0]), vb = val(b[0]);
+             return ((va > vb) - (va < vb)) * sortDir;
+           })
            .forEach(([r, band]) => { tbody.appendChild(r); tbody.appendChild(band); });
   }));
 
@@ -31,8 +34,11 @@
   const selCourse = document.getElementById("lmi-filter-course");
   function applyFilter() {
     const socsFor = selCourse && selCourse.value ? selCourse.value.split(",") : null;
+    const sem = selSem ? selSem.value : "";
     pairs().forEach(([r, band]) => {
-      const show = !socsFor || socsFor.includes(r.dataset.soc);
+      const passCourse = !socsFor || socsFor.includes(r.dataset.soc);
+      const passSem = !sem || (r.dataset.sems || "").split(",").includes(sem);
+      const show = passCourse && passSem;
       r.style.display = show ? "" : "none";
       band.style.display = show ? "" : "none";
       if (!show) band.classList.remove("open");

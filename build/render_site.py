@@ -221,7 +221,11 @@ def course_grid(courses):
     </section>'''
 
 
-def lmi_section(lmi):
+def lmi_section(lmi, courses):
+    soc_sems = {}
+    for course in courses:
+        for soc in course["socs"]:
+            soc_sems.setdefault(soc, set()).add(course["semester"])
     rows = []
     for o in lmi["occupations"]:
         up = "up" if o["growthPct"] >= 0 else "down"
@@ -237,7 +241,8 @@ def lmi_section(lmi):
                 f'<p class="note">OEWS current-quarter wage distribution ({html.escape(lmi["meta"]["percentilesAsOf"])}); '
                 f'the CA median wage column above is the 2024&ndash;34 <em>projected</em> median, so the two can legitimately differ.</p></div>') if p else \
                '<div class="band-inner"><span class="note">Percentile detail loads live from data.ca.gov.</span></div>'
-        rows.append(f'''<tr class="lmi-row" data-soc="{o['soc']}" data-median="{o['medianWage']}" data-growth="{o['growthPct']}" data-openings="{o['openings']}">
+        sems = ",".join(str(s) for s in sorted(soc_sems.get(o["soc"], set())))
+        rows.append(f'''<tr class="lmi-row" data-soc="{o['soc']}" data-median="{o['medianWage']}" data-growth="{o['growthPct']}" data-openings="{o['openings']}" data-sems="{sems}">
   <td><span class="occ">{html.escape(o['title'])}</span><br><span class="soc">{o['soc']}</span></td>
   <td class="num median">${o['medianWage']:,}</td>
   <td class="num growth {up}">{g}</td>
@@ -425,7 +430,7 @@ def render_index(curriculum, lmi):
         overview(program),
         roadmap(program),
         course_grid(courses),
-        lmi_section(lmi),
+        lmi_section(lmi, courses),
         pathway(program),
     ])
     extra = f'<script>window.__COURSES={courses_js};</script>'
