@@ -1,6 +1,7 @@
 import json, os, datetime, urllib.request, urllib.parse, pathlib
 OEWS="aef4c53a-7e17-418c-acc1-d189e39b6caa"
 CKAN="https://data.ca.gov/api/3/action/datastore_search_sql"
+TOP_CODE=239200  # OEWS annual wage top code; censored high percentiles report as ">= this"
 VERIFIED=[  # soc, title, base, projected, growthPct, openings, medianWage, meanWage
  ("15-2051","Data Scientists",40400,55400,37.1,40180,145554,159675),
  ("15-1221","Computer & Information Research Scientists",8800,11100,26.1,7690,163554,168344),
@@ -14,14 +15,25 @@ def ckan_sql(sql):
     url=CKAN+"?"+urllib.parse.urlencode({"sql":sql})
     with urllib.request.urlopen(url,timeout=30) as r: return json.load(r)["result"]["records"]
 def percentiles(soc):
+    # OEWS stores SOC without the hyphen (152051), the statewide all-industries
+    # annual figures under Area Name='California', Industry Name='Total, All Industry',
+    # Wage Type='Annual wage or salary'.
     try:
+        soc6=soc.replace("-","")
         sql=(f'SELECT "Year","Quarter","10th Percentile Wage" p10,"25th Percentile Wage" p25,'
              f'"50th Percentile (Median) Wage" p50,"75th Percentile Wage" p75,"90th Percentile Wage" p90 '
-             f'FROM "{OEWS}" WHERE "Area Name"=\'California\' AND "Standard Occupational Classification"=\'{soc}\' '
-             f'AND "50th Percentile (Median) Wage" IS NOT NULL ORDER BY "Year" DESC, "Quarter" DESC LIMIT 1')
+             f'FROM "{OEWS}" WHERE "Area Name"=\'California\' AND "Standard Occupational Classification"=\'{soc6}\' '
+             f'AND "Industry Name"=\'Total, All Industry\' AND "Wage Type"=\'Annual wage or salary\' '
+             f'AND "50th Percentile (Median) Wage" IS NOT NULL ORDER BY "Year" DESC LIMIT 1')
         r=ckan_sql(sql)
         if not r: return None,None
-        row=r[0]; f=lambda k:int(float(str(row[k]).replace(",","").replace("$","")))
+        row=r[0]
+        # BLS top-codes the highest percentiles for top earners (stored null) at the
+        # OEWS annual top code $239,200 — substitute it so the band shows "$239,200+".
+        def f(k):
+            v=row[k]
+            if v is None or str(v).strip() in ("","None"): return TOP_CODE
+            return int(round(float(str(v).replace(",","").replace("$",""))))
         return {"p10":f("p10"),"p25":f("p25"),"p50":f("p50"),"p75":f("p75"),"p90":f("p90")}, f'{row["Year"]} {row["Quarter"]}'
     except Exception as e:
         print("percentile fetch failed for",soc,e); return None,None
@@ -45,7 +57,7 @@ for soc,title,base,proj,gr,op,med,mean in VERIFIED:
 nat=bls_national()
 out={"meta":{"builtAt":datetime.date.today().isoformat(),"projectionsPeriod":"2024-2034",
       "source":"California EDD via data.ca.gov — Long-Term Occupational Projections 2024–2034 + OEWS wages",
-      "verifiedAsOf":"May 2024 employment / Q1 2025 wages","percentilesAsOf":pct_asof or "n/a"},
+      "verifiedAsOf":"May 2024 employment / Q1 2025 wages","percentilesAsOf":pct_asof or "n/a","wageTopCode":TOP_CODE},
      "occupations":occs,
      "national":{"label":"U.S. Computer Systems Design & related services — employment",
                  "seriesId":"CES6054150001","value":nat["value"],"unit":"thousands",

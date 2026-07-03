@@ -4,7 +4,8 @@
     "projectionsPeriod": "2024-2034",
     "source": "California EDD via data.ca.gov — Long-Term Occupational Projections 2024–2034 + OEWS wages",
     "verifiedAsOf": "May 2024 employment / Q1 2025 wages",
-    "percentilesAsOf": "n/a"
+    "percentilesAsOf": "2025 1st Qtr",
+    "wageTopCode": 239200
   },
   "occupations": [
     {
@@ -16,7 +17,13 @@
       "openings": 40180,
       "medianWage": 145554,
       "meanWage": 159675,
-      "percentiles": null
+      "percentiles": {
+        "p10": 75385,
+        "p25": 101136,
+        "p50": 140518,
+        "p75": 182303,
+        "p90": 227088
+      }
     },
     {
       "soc": "15-1221",
@@ -27,7 +34,13 @@
       "openings": 7690,
       "medianWage": 163554,
       "meanWage": 168344,
-      "percentiles": null
+      "percentiles": {
+        "p10": 85358,
+        "p25": 108963,
+        "p50": 160538,
+        "p75": 207757,
+        "p90": 239200
+      }
     },
     {
       "soc": "15-1252",
@@ -38,7 +51,13 @@
       "openings": 207260,
       "medianWage": 179292,
       "meanWage": 190798,
-      "percentiles": null
+      "percentiles": {
+        "p10": 106775,
+        "p25": 138484,
+        "p50": 175555,
+        "p75": 218049,
+        "p90": 239200
+      }
     },
     {
       "soc": "11-3021",
@@ -49,7 +68,13 @@
       "openings": 82270,
       "medianWage": 221952,
       "meanWage": 237025,
-      "percentiles": null
+      "percentiles": {
+        "p10": 129579,
+        "p25": 168120,
+        "p50": 215259,
+        "p75": 239200,
+        "p90": 239200
+      }
     },
     {
       "soc": "15-1241",
@@ -60,7 +85,13 @@
       "openings": 9510,
       "medianWage": 163317,
       "meanWage": 154087,
-      "percentiles": null
+      "percentiles": {
+        "p10": 86334,
+        "p25": 112712,
+        "p50": 142110,
+        "p75": 180198,
+        "p90": 222189
+      }
     },
     {
       "soc": "15-1299",
@@ -71,7 +102,13 @@
       "openings": 59320,
       "medianWage": 138203,
       "meanWage": 140015,
-      "percentiles": null
+      "percentiles": {
+        "p10": 57152,
+        "p25": 83027,
+        "p50": 132249,
+        "p75": 173737,
+        "p90": 219241
+      }
     },
     {
       "soc": "15-1211",
@@ -82,7 +119,13 @@
       "openings": 41500,
       "medianWage": 131295,
       "meanWage": 136553,
-      "percentiles": null
+      "percentiles": {
+        "p10": 80192,
+        "p25": 102523,
+        "p50": 131129,
+        "p75": 165170,
+        "p90": 202220
+      }
     },
     {
       "soc": "15-1244",
@@ -93,7 +136,13 @@
       "openings": 11510,
       "medianWage": 109420,
       "meanWage": 117612,
-      "percentiles": null
+      "percentiles": {
+        "p10": 69283,
+        "p25": 86920,
+        "p50": 109518,
+        "p75": 137703,
+        "p90": 171775
+      }
     }
   ],
   "national": {
