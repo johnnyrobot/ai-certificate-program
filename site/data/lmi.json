@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "builtAt": "2026-07-03",
+    "projectionsPeriod": "2024-2034",
+    "source": "California EDD via data.ca.gov — Long-Term Occupational Projections 2024–2034 + OEWS wages",
+    "verifiedAsOf": "May 2024 employment / Q1 2025 wages",
+    "percentilesAsOf": "n/a"
+  },
+  "occupations": [
+    {
+      "soc": "15-2051",
+      "title": "Data Scientists",
+      "base": 40400,
+      "projected": 55400,
+      "growthPct": 37.1,
+      "openings": 40180,
+      "medianWage": 145554,
+      "meanWage": 159675,
+      "percentiles": null
+    },
+    {
+      "soc": "15-1221",
+      "title": "Computer & Information Research Scientists",
+      "base": 8800,
+      "projected": 11100,
+      "growthPct": 26.1,
+      "openings": 7690,
+      "medianWage": 163554,
+      "meanWage": 168344,
+      "percentiles": null
+    },
+    {
+      "soc": "15-1252",
+      "title": "Software Developers",
+      "base": 290800,
+      "projected": 344400,
+      "growthPct": 18.4,
+      "openings": 207260,
+      "medianWage": 179292,
+      "meanWage": 190798,
+      "percentiles": null
+    },
+    {
+      "soc": "11-3021",
+      "title": "Computer & Information Systems Managers",
+      "base": 96800,
+      "projected": 112800,
+      "growthPct": 16.5,
+      "openings": 82270,
+      "medianWage": 221952,
+      "meanWage": 237025,
+      "percentiles": null
+    },
+    {
+      "soc": "15-1241",
+      "title": "Computer Network Architects",
+      "base": 15300,
+      "projected": 17100,
+      "growthPct": 11.8,
+      "openings": 9510,
+      "medianWage": 163317,
+      "meanWage": 154087,
+      "percentiles": null
+    },
+    {
+      "soc": "15-1299",
+      "title": "Computer Occupations, All Other",
+      "base": 84700,
+      "projected": 94100,
+      "growthPct": 11.1,
+      "openings": 59320,
+      "medianWage": 138203,
+      "meanWage": 140015,
+      "percentiles": null
+    },
+    {
+      "soc": "15-1211",
+      "title": "Computer Systems Analysts",
+      "base": 62000,
+      "projected": 68000,
+      "growthPct": 9.7,
+      "openings": 41500,
+      "medianWage": 131295,
+      "meanWage": 136553,
+      "percentiles": null
+    },
+    {
+      "soc": "15-1244",
+      "title": "Network & Computer Systems Administrators",
+      "base": 26900,
+      "projected": 25700,
+      "growthPct": -4.5,
+      "openings": 11510,
+      "medianWage": 109420,
+      "meanWage": 117612,
+      "percentiles": null
+    }
+  ],
+  "national": {
+    "label": "U.S. Computer Systems Design & related services — employment",
+    "seriesId": "CES6054150001",
+    "value": 2374.6,
+    "unit": "thousands",
+    "period": "June 2026",
+    "source": "BLS CES"
+  }
+}
