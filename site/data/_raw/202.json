@@ -1,0 +1,48 @@
+{
+  "code": "202",
+  "title": "Model Adaptation — Fine-Tuning & Quantization",
+  "subtitle": "Customize and compress open-weight LLMs on consumer and cloud GPUs",
+  "description": "This hands-on course teaches adult learners to adapt open-weight language models to specific tasks and domains without enterprise-scale hardware. Students learn to decide when to fine-tune versus prompt-engineer or use RAG, build and format instruction datasets, and run supervised and parameter-efficient fine-tuning (LoRA, QLoRA, PEFT) plus preference tuning with DPO using Hugging Face, Unsloth, and Axolotl. The course also covers quantization formats (GGUF, AWQ, GPTQ, FP8), KV-cache quantization, and knowledge distillation to shrink models for deployment. Learners evaluate adapted models, guard against overfitting and catastrophic forgetting, and address the licensing and ethics of model weights and training data.",
+  "objectives": [
+    "Evaluate a task and choose correctly among prompt engineering, retrieval-augmented generation, and fine-tuning, justifying the decision by cost, data availability, and hardware limits.",
+    "Build, clean, and format instruction and chat datasets and run supervised and parameter-efficient fine-tuning (LoRA, QLoRA, PEFT) on a single consumer or cloud GPU.",
+    "Apply preference tuning with DPO and track experiments to improve a model while avoiding overfitting and catastrophic forgetting.",
+    "Quantize models into GGUF, AWQ, GPTQ, and FP8 formats and analyze the resulting precision, quality, and memory tradeoffs.",
+    "Assess licensing and ethical constraints on model weights and training data and package an adapted, quantized model for serving."
+  ],
+  "slos": [
+    "Choose correctly among prompt engineering, RAG, and fine-tuning for a given task, cost, and hardware budget.",
+    "Build instruction/chat datasets and run SFT and parameter-efficient fine-tuning (LoRA/QLoRA/PEFT) on a single GPU.",
+    "Apply DPO preference tuning and track experiments while avoiding overfitting and catastrophic forgetting.",
+    "Quantize models to GGUF, AWQ, GPTQ, and FP8 and analyze precision, quality, and memory tradeoffs.",
+    "Evaluate model-weight and training-data licensing/ethics and package an adapted, quantized model for serving."
+  ],
+  "weeks": [
+    {"n": 1, "title": "Adapt, Prompt, or Retrieve: The Model Customization Decision", "summary": "Introduces the canonical decision sequence — prompt engineering, then RAG, then fine-tuning — and when each is justified by cost, data, and hardware."},
+    {"n": 2, "title": "Open Models, Licenses, and the Fine-Tuning Toolchain Setup", "summary": "Surveys open-weight model families and licenses and sets up the fine-tuning toolchain used throughout the course."},
+    {"n": 3, "title": "Dataset Design and Data Preparation for Fine-Tuning", "summary": "Covers designing, cleaning, and preparing datasets suitable for supervised fine-tuning."},
+    {"n": 4, "title": "Instruction and Chat Formatting, Tokenization, and Templates", "summary": "Covers instruction and chat formatting conventions, tokenization, and chat templates used to prepare training data."},
+    {"n": 5, "title": "Supervised Fine-Tuning Fundamentals with Hugging Face TRL", "summary": "Introduces supervised fine-tuning fundamentals using the Hugging Face TRL library."},
+    {"n": 6, "title": "Parameter-Efficient Fine-Tuning: LoRA and PEFT", "summary": "Covers parameter-efficient fine-tuning methods, focusing on LoRA and the Hugging Face PEFT library."},
+    {"n": 7, "title": "QLoRA and Training on Consumer GPUs with Unsloth", "summary": "Covers QLoRA and using Unsloth to train models efficiently on consumer-grade GPUs."},
+    {"n": 8, "title": "Axolotl, Config-Driven Training, and Experiment Tracking", "summary": "Midterm week: covers config-driven training with Axolotl and experiment tracking practices."},
+    {"n": 9, "title": "Preference Tuning: DPO in Practice (with a Look at GRPO)", "summary": "Covers Direct Preference Optimization in practice and contrasts it with GRPO's group-relative reward approach."},
+    {"n": 10, "title": "Evaluating Fine-Tuned Models and Detecting Overfitting", "summary": "Covers evaluation methods for fine-tuned models and techniques for detecting overfitting."},
+    {"n": 11, "title": "Catastrophic Forgetting, Adapter Merging, and Cloud Training", "summary": "Covers catastrophic forgetting, merging trained adapters into base models, and moving training workloads to the cloud."},
+    {"n": 12, "title": "Quantization Foundations: Precision, GGUF, and llama.cpp", "summary": "Introduces quantization foundations, numeric precision tradeoffs, the GGUF format, and llama.cpp."},
+    {"n": 13, "title": "Advanced Quantization: AWQ, GPTQ, FP8, and KV-Cache Quantization", "summary": "Covers advanced quantization methods including AWQ, GPTQ, FP8, and KV-cache quantization."},
+    {"n": 14, "title": "Knowledge Distillation and Quality-Size Tradeoff Analysis", "summary": "Covers knowledge distillation techniques and analyzing quality-versus-size tradeoffs for compressed models."},
+    {"n": 15, "title": "Serving Adapted and Quantized Models — Handoff to AIINFRA 201", "summary": "Covers serving fine-tuned, quantized models and preparing a handoff document for production serving in AIINFRA 201."},
+    {"n": 16, "title": "Capstone Project & Course Review", "summary": "Final capstone week: students package and present an adapted, quantized model ready for deployment."}
+  ],
+  "tools": [
+    {"group": "Fine-tuning libraries", "items": ["Hugging Face Transformers", "PEFT", "TRL"]},
+    {"group": "Accelerated training", "items": ["Unsloth", "Axolotl", "bitsandbytes"]},
+    {"group": "Quantization", "items": ["llama.cpp/GGUF", "AutoAWQ", "GPTQModel", "llm-compressor (FP8)"]},
+    {"group": "Experiment tracking", "items": ["Weights & Biases", "TensorBoard", "Hugging Face Hub"]},
+    {"group": "Compute platforms", "items": ["Google Colab", "Kaggle Notebooks", "RunPod", "Lambda Cloud"]},
+    {"group": "Datasets and models", "items": ["Hugging Face Datasets", "Hub model cards", "meta-llama/Qwen/Mistral/Gemma open weights"]},
+    {"group": "Evaluation", "items": ["lm-evaluation-harness", "LLM-as-judge", "custom held-out test sets"]},
+    {"group": "Serving handoff", "items": ["Ollama", "vLLM", "LM Studio", "text-generation-inference"]}
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "code": "200",
+  "title": "Cloud Platforms for AI & CI/CD for ML",
+  "subtitle": "Deploy and automate AI workloads on AWS, Azure, and Google Cloud",
+  "description": "This course prepares students to deploy, automate, and operate AI/ML workloads on major cloud platforms. Students will provision cloud infrastructure across AWS, Azure, and Google Cloud, then build CI/CD pipelines with GitHub Actions to automatically test, build, and deploy containerized model services. The course concludes with MLOps foundations — experiment tracking, model registries, and infrastructure-as-code — culminating in an end-to-end, automated, cost-aware deployment pipeline for a machine learning application.",
+  "objectives": [
+    "Provision and secure cloud resources (accounts, IAM, networking, cost controls) for AI workloads across AWS, Azure, and Google Cloud.",
+    "Deploy AI workloads using cloud compute, GPU instances, object storage, and managed AI/ML services.",
+    "Build CI/CD pipelines with GitHub Actions that test, build, and deploy containerized model services automatically.",
+    "Apply MLOps foundations — experiment tracking, model registry, and reproducible pipelines — with MLflow and Terraform.",
+    "Monitor, right-size, and cost-optimize cloud AI deployments, choosing appropriate services for a given use case."
+  ],
+  "slos": [
+    "Provision and secure cloud resources (accounts, IAM, networking, cost controls) for AI workloads across AWS, Azure, and Google Cloud.",
+    "Deploy AI workloads using cloud compute, GPU instances, object storage, and managed AI/ML services.",
+    "Build CI/CD pipelines with GitHub Actions that test, build, and deploy containerized model services automatically.",
+    "Apply MLOps foundations — experiment tracking, model registry, and reproducible pipelines — with MLflow and Terraform.",
+    "Monitor, right-size, and cost-optimize cloud AI deployments, choosing appropriate services for a given use case."
+  ],
+  "weeks": [
+    {"n": 1, "title": "Cloud Computing for AI: Providers, Regions, and Free Tiers", "summary": "Introduces AWS, Azure, and Google Cloud free-tier structures, and the distinction between cloud regions and Availability Zones."},
+    {"n": 2, "title": "Cloud Accounts, IAM, and Cost Guardrails", "summary": "Covers least-privilege IAM, multi-account guardrails, and configuring AWS Budgets to control cloud spending."},
+    {"n": 3, "title": "Cloud Compute for AI: VMs, GPU Instances, and Spot Pricing", "summary": "Compares On-Demand, Spot, and GPU instance pricing models and teaches checkpointing strategies for interruptible training."},
+    {"n": 4, "title": "Cloud Storage and Data for AI: Object Storage and Buckets", "summary": "Covers S3 buckets, storage classes, lifecycle rules, versioning, and security defaults for AI data storage."},
+    {"n": 5, "title": "Managed AI/ML Services: SageMaker, Vertex AI, and Azure ML", "summary": "Compares the architecture and philosophy of SageMaker AI, Vertex AI (Gemini Enterprise Agent Platform), and Azure Machine Learning."},
+    {"n": 6, "title": "Serverless and Managed Kubernetes in the Cloud", "summary": "Covers AWS Lambda serverless compute, managed Kubernetes options (EKS, GKE Autopilot), and KServe model serving."},
+    {"n": 7, "title": "Infrastructure as Code for Cloud AI with Terraform", "summary": "Teaches the Terraform workflow, state management, and provisioning free-tier cloud AI infrastructure as code."},
+    {"n": 8, "title": "Cloud Security, Networking, and Secrets", "summary": "Covers security groups vs. network ACLs, secrets management, and GitHub Actions OIDC authentication; this week includes the course midterm."},
+    {"n": 9, "title": "Introduction to CI/CD and GitHub Actions", "summary": "Introduces Continuous Integration, Delivery, and Deployment concepts and building a first GitHub Actions workflow."},
+    {"n": 10, "title": "Continuous Integration for ML: Testing and Image Builds", "summary": "Extends CI with data-quality and model-evaluation gates, and builds reproducible Docker image pipelines."},
+    {"n": 11, "title": "Continuous Delivery for ML: Automated Model Deployment", "summary": "Covers blue-green vs. canary deployment strategies and building tested rollback plans for model releases."},
+    {"n": 12, "title": "MLOps Foundations: Experiment Tracking and Model Registry with MLflow", "summary": "Introduces MLflow Tracking and Model Registry for logging experiments and governing model versions."},
+    {"n": 13, "title": "End-to-End Automated Model Deployment Pipelines", "summary": "Chains CI/CD and MLOps tools into a full automated pipeline from code commit to monitored production deployment."},
+    {"n": 14, "title": "Monitoring and Cost Optimization for Cloud AI", "summary": "Covers CloudWatch metrics, logs, and alarms alongside cost optimization levers for cloud AI workloads."},
+    {"n": 15, "title": "Multi-Cloud, Portability, and GitOps", "summary": "Covers GitOps principles, ArgoCD vs. Flux, and the real costs and limits of multi-cloud portability."},
+    {"n": 16, "title": "Capstone Project & Course Review", "summary": "Students design and partially build an end-to-end cloud AI system as a final capstone project and reflect on the course."}
+  ],
+  "tools": [
+    {"group": "Cloud Platforms", "items": ["AWS", "Microsoft Azure", "Google Cloud"]},
+    {"group": "Compute & Storage", "items": ["EC2 / Compute Engine / Azure VMs", "GPU instances (G5, P5, Trainium3)", "S3 / GCS / Blob Storage"]},
+    {"group": "Managed AI/ML Services", "items": ["AWS SageMaker", "Google Vertex AI (Gemini Enterprise Agent Platform)", "Azure Machine Learning"]},
+    {"group": "CI/CD", "items": ["GitHub Actions", "act (local runner)", "Docker container image build/push", "GitHub Container Registry (GHCR)"]},
+    {"group": "MLOps", "items": ["MLflow (tracking + model registry)", "Great Expectations", "Docker"]},
+    {"group": "IaC, Orchestration & Monitoring", "items": ["Terraform", "LocalStack", "Kubernetes (EKS, GKE Autopilot, Minikube, kind)", "ArgoCD / Flux", "Prometheus/Grafana", "CloudWatch"]}
+  ]
+}

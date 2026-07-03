@@ -1,0 +1,1817 @@
+{
+  "program": {
+    "name": "AI Infrastructure and Architecture",
+    "credential": "Certificate of Completion — non-credit (CDCP)",
+    "stats": {
+      "courses": 10,
+      "contactHours": 540,
+      "unitEquivalent": 30,
+      "semesters": 3,
+      "weeksPerCourse": 16,
+      "hoursPerCourse": 54
+    },
+    "overview": "The AI Infrastructure and Architecture certificate is a 10-course, 540-contact-hour noncredit sequence (a 30-unit credit equivalent) that takes learners from foundational computing concepts through production-grade AI systems. Students build the compute, container, cloud, and data skills that underlie modern AI workloads, then apply them to production inference serving, model adaptation, agentic systems, retrieval-augmented generation, and AI security and governance. Each 16-week, 54-hour course pairs lecture with hands-on labs using free and open-source tools and cloud free tiers, so no paid software or hardware is required to complete the program. Every course ends in a midterm assessment in week 8 and a capstone project in week 16, culminating in a final, portfolio-ready capstone course that integrates serving, evaluation, and governance into one production-grade artifact.",
+    "pathway": "The certificate is organized as three stackable semesters — Foundations, Core Infrastructure, and Applied Production Systems — so a learner can exit after any semester with a coherent, résumé-ready set of skills, or continue straight through to the full credential. As a noncredit Chancellor's-Office-recognized CDCP (Credit for Prior Learning-eligible, enhanced-funding) certificate, the program is designed to articulate toward credit coursework, giving graduates a stackable, non-credit-to-credit on-ramp into an associate degree or transfer pathway without repeating material they've already mastered.",
+    "careersNarrative": "California labor-market data show the occupations this certificate targets among the fastest-growing in the state: Data Scientists (+37.1%) and Computer & Information Research Scientists (+26.1%) are projected to grow far faster than the statewide all-occupations baseline of 8.8%, and Software Developers — the largest target occupation at 290,800 workers — is projected to add over 200,000 openings through 2034. AI is simultaneously displacing routine technical roles (Network & Computer Systems Administrators is the one target occupation in decline) and creating new demand for workers who can build, deploy, and govern AI systems — precisely the retraining path this certificate provides.",
+    "semesters": [
+      {
+        "n": 1,
+        "theme": "Foundations",
+        "hours": 162,
+        "courses": [
+          "100",
+          "101",
+          "102"
+        ]
+      },
+      {
+        "n": 2,
+        "theme": "Core Infrastructure",
+        "hours": 162,
+        "courses": [
+          "200",
+          "201",
+          "202"
+        ]
+      },
+      {
+        "n": 3,
+        "theme": "Applied Production Systems",
+        "hours": 216,
+        "courses": [
+          "300",
+          "301",
+          "302",
+          "303"
+        ]
+      }
+    ]
+  },
+  "courses": [
+    {
+      "code": "100",
+      "title": "Introduction to AI Systems & Infrastructure",
+      "subtitle": "The foundation course: AI workload, compute, data & deployment basics",
+      "semester": 1,
+      "hours": 54,
+      "unitEquivalent": 3,
+      "prereq": "none",
+      "next": "101",
+      "description": "An introduction to the systems and infrastructure that power modern artificial intelligence. Students learn what AI workloads are, the compute, data, and software layers they depend on, and how AI systems are deployed across cloud, on-premises, and hybrid environments. The course threads a prototype-vs-production mindset throughout and previews the security, governance, and inference-serving topics that later certificate courses cover in depth. No prior AI experience required.",
+      "objectives": [
+        "Define key AI concepts and terminology relevant to infrastructure planning.",
+        "Identify appropriate infrastructure components (compute, data, software) for specific AI workloads.",
+        "Evaluate cloud, on-premises, and hybrid deployment models against real requirements and constraints.",
+        "Apply responsible-AI and governance frameworks (NIST AI RMF, EU AI Act at survey level) to infrastructure decisions.",
+        "Configure a basic, containerized AI development environment for building and testing."
+      ],
+      "slos": [
+        "Define key AI concepts and terminology for infrastructure planning",
+        "Identify infrastructure components (compute/data/software) for a given AI workload",
+        "Evaluate cloud vs. on-prem vs. hybrid deployment models against requirements",
+        "Apply responsible-AI/governance frameworks (NIST AI RMF, EU AI Act) to decisions",
+        "Configure a basic containerized AI development environment"
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "title": "Introduction to AI Infrastructure",
+          "summary": "Frames the course's prototype-vs-production theme and orients students to AI infrastructure concepts."
+        },
+        {
+          "n": 2,
+          "title": "AI Workloads & Infrastructure Requirements",
+          "summary": "Distinguishes training vs. inference workloads and the infrastructure requirements each demands."
+        },
+        {
+          "n": 3,
+          "title": "Computational Resources for AI",
+          "summary": "Surveys computational resources for AI, including CPUs, GPUs, TPUs, and other accelerators."
+        },
+        {
+          "n": 4,
+          "title": "AI Software Infrastructure",
+          "summary": "Covers AI software infrastructure: frameworks, CUDA, and containers underlying AI systems."
+        },
+        {
+          "n": 5,
+          "title": "Data Infrastructure for AI",
+          "summary": "Examines the data infrastructure that feeds AI systems, from storage to pipelines."
+        },
+        {
+          "n": 6,
+          "title": "Cloud-Based AI Infrastructure",
+          "summary": "Explores how AI infrastructure is provisioned and run on cloud platforms."
+        },
+        {
+          "n": 7,
+          "title": "On-Premises AI Infrastructure",
+          "summary": "Examines on-premises approaches to hosting and running AI infrastructure."
+        },
+        {
+          "n": 8,
+          "title": "Hybrid Deployment Models & Midterm",
+          "summary": "Covers hybrid cloud/on-prem deployment models; includes the course midterm exam."
+        },
+        {
+          "n": 9,
+          "title": "Scaling AI Infrastructure",
+          "summary": "Looks at scaling AI infrastructure, with an introduction to inference serving."
+        },
+        {
+          "n": 10,
+          "title": "AI Infrastructure Security",
+          "summary": "Surveys AI infrastructure security, including an overview of the OWASP LLM Top 10."
+        },
+        {
+          "n": 11,
+          "title": "Monitoring, Logging & Observability",
+          "summary": "Covers monitoring, logging, and observability practices for AI infrastructure."
+        },
+        {
+          "n": 12,
+          "title": "Infrastructure for the AI Development Lifecycle",
+          "summary": "Introduces infrastructure supporting the AI development lifecycle, including MLOps basics."
+        },
+        {
+          "n": 13,
+          "title": "Ethical & Responsible AI Infrastructure",
+          "summary": "Applies responsible-AI governance frameworks, including the NIST AI RMF and EU AI Act, to infrastructure."
+        },
+        {
+          "n": 14,
+          "title": "Cost Optimization for AI Infrastructure",
+          "summary": "Introduces cost optimization (FinOps) practices for AI infrastructure."
+        },
+        {
+          "n": 15,
+          "title": "AI Infrastructure Trends & Future Directions",
+          "summary": "Discusses emerging trends and future directions in AI infrastructure."
+        },
+        {
+          "n": 16,
+          "title": "Capstone Project & Course Review",
+          "summary": "Students complete a final capstone project and review the course as a whole."
+        }
+      ],
+      "midtermWeek": 8,
+      "capstoneWeek": 16,
+      "tools": [
+        {
+          "group": "Local Development",
+          "items": [
+            "VS Code",
+            "Docker Desktop",
+            "Python 3.11+"
+          ]
+        },
+        {
+          "group": "Cloud Platforms",
+          "items": [
+            "AWS free tier",
+            "Google Cloud free tier",
+            "Azure free tier"
+          ]
+        },
+        {
+          "group": "Compute & Accelerators",
+          "items": [
+            "CPU",
+            "GPU",
+            "TPU",
+            "Other AI accelerators"
+          ]
+        },
+        {
+          "group": "AI Software Stack",
+          "items": [
+            "ML frameworks",
+            "CUDA",
+            "Containers"
+          ]
+        },
+        {
+          "group": "Governance & Security Frameworks",
+          "items": [
+            "NIST AI RMF",
+            "EU AI Act",
+            "OWASP LLM Top 10"
+          ]
+        },
+        {
+          "group": "Operations Practices",
+          "items": [
+            "Monitoring & logging",
+            "Observability",
+            "MLOps basics",
+            "FinOps / cost optimization"
+          ]
+        }
+      ],
+      "socs": [
+        "15-1299",
+        "15-1252"
+      ]
+    },
+    {
+      "code": "101",
+      "title": "Development Environments & Tools",
+      "subtitle": "The practical developer toolkit for building AI projects",
+      "semester": 1,
+      "hours": 54,
+      "unitEquivalent": 3,
+      "prereq": "AIINFRA 100",
+      "next": "102",
+      "description": "A hands-on introduction to the developer toolkit behind modern AI work: a professional Python setup, VS Code, Git and GitHub, reproducible environments and package management (venv, conda, and the modern uv), the Jupyter and data-science stack (NumPy, pandas, scikit-learn), deep-learning tooling (PyTorch), testing and code quality, a first look at containers and cloud development environments, and a preview of experiment tracking with MLflow. Students finish able to build, version, and share AI projects and leave with a portfolio.",
+      "objectives": [
+        "Configure and customize a professional AI development environment (VS Code, extensions, Python).",
+        "Write, debug, and structure Python code for AI applications.",
+        "Use Git and GitHub for version control and collaborative development (branching, pull requests).",
+        "Manage reproducible environments and packages with venv, conda, and modern tooling (uv).",
+        "Use the core Python data-science/ML toolchain (NumPy, pandas, Jupyter, scikit-learn) and preview experiment tracking (MLflow)."
+      ],
+      "slos": [
+        "Configure and customize a professional AI development environment",
+        "Write, debug, and structure Python code for AI applications",
+        "Use Git and GitHub for version control and collaboration",
+        "Manage reproducible environments and packages (venv, conda, uv)",
+        "Use the Python data-science/ML toolchain and preview experiment tracking"
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "title": "Introduction to AI Development Environments",
+          "summary": "Orients students to the AI developer toolkit and sets up their first professional development environment."
+        },
+        {
+          "n": 2,
+          "title": "Python for AI — Fundamentals",
+          "summary": "Covers core Python fundamentals needed to write, run, and debug code for AI applications."
+        },
+        {
+          "n": 3,
+          "title": "Development Environment Customization (VS Code)",
+          "summary": "Customizes VS Code with extensions and settings to build an efficient, professional AI coding setup."
+        },
+        {
+          "n": 4,
+          "title": "Version Control Fundamentals with Git",
+          "summary": "Introduces Git fundamentals for tracking changes and versioning AI project code."
+        },
+        {
+          "n": 5,
+          "title": "Advanced Git for AI Development",
+          "summary": "Builds on Git fundamentals with advanced workflows suited to AI development projects."
+        },
+        {
+          "n": 6,
+          "title": "Collaborative Development with GitHub",
+          "summary": "Uses GitHub for collaborative development, including branching and pull requests."
+        },
+        {
+          "n": 7,
+          "title": "Environment & Package Management (venv, conda, uv)",
+          "summary": "Teaches reproducible environment and package management using venv, conda, and the modern uv tool."
+        },
+        {
+          "n": 8,
+          "title": "Jupyter Ecosystem & Midterm",
+          "summary": "Introduces the Jupyter ecosystem for interactive AI development; this week includes the course midterm."
+        },
+        {
+          "n": 9,
+          "title": "The Python Data Science Stack (NumPy & pandas)",
+          "summary": "Covers the Python data science stack, focusing on NumPy and pandas for data handling."
+        },
+        {
+          "n": 10,
+          "title": "Machine Learning Libraries (scikit-learn)",
+          "summary": "Introduces machine learning libraries in Python, centered on scikit-learn."
+        },
+        {
+          "n": 11,
+          "title": "Deep Learning Development Tools (PyTorch)",
+          "summary": "Introduces deep learning development tooling using PyTorch."
+        },
+        {
+          "n": 12,
+          "title": "Testing & Quality Assurance for AI",
+          "summary": "Covers testing and quality assurance practices for AI code and projects."
+        },
+        {
+          "n": 13,
+          "title": "Containerization for AI Development (Docker)",
+          "summary": "Introduces containerization for AI development using Docker."
+        },
+        {
+          "n": 14,
+          "title": "Cloud Development Environments",
+          "summary": "Explores cloud development environments such as Codespaces and Colab for AI work."
+        },
+        {
+          "n": 15,
+          "title": "Deployment Prep & Experiment Tracking (MLflow)",
+          "summary": "Prepares projects for deployment and previews experiment tracking with MLflow."
+        },
+        {
+          "n": 16,
+          "title": "Final Project & Portfolio Development",
+          "summary": "Students complete a final capstone project and build a portfolio showcasing their work."
+        }
+      ],
+      "midtermWeek": 8,
+      "capstoneWeek": 16,
+      "tools": [
+        {
+          "group": "Languages",
+          "items": [
+            "Python 3.11+"
+          ]
+        },
+        {
+          "group": "Editor/IDE",
+          "items": [
+            "VS Code",
+            "VS Code extensions"
+          ]
+        },
+        {
+          "group": "Version Control",
+          "items": [
+            "Git",
+            "GitHub"
+          ]
+        },
+        {
+          "group": "Environment & Package Management",
+          "items": [
+            "venv",
+            "conda",
+            "uv"
+          ]
+        },
+        {
+          "group": "Notebooks & Data Science Stack",
+          "items": [
+            "Jupyter",
+            "NumPy",
+            "pandas",
+            "scikit-learn"
+          ]
+        },
+        {
+          "group": "Deep Learning, Containers & Cloud",
+          "items": [
+            "PyTorch",
+            "Docker",
+            "GitHub Codespaces",
+            "Google Colab",
+            "MLflow"
+          ]
+        }
+      ],
+      "socs": [
+        "15-1252",
+        "15-1299"
+      ]
+    },
+    {
+      "code": "102",
+      "title": "Containerization & GPU-Aware Orchestration",
+      "subtitle": "Package, deploy, and scale AI workloads with Docker and Kubernetes",
+      "semester": 1,
+      "hours": 54,
+      "unitEquivalent": 3,
+      "prereq": "AIINFRA 101",
+      "next": "200",
+      "description": "This course teaches students to package, run, and orchestrate AI and Python applications using industry-standard containerization and orchestration tools. Students progress from building Docker images and GPU-enabled containers to deploying, scaling, and monitoring multi-container AI workloads on Kubernetes, including GPU-aware scheduling with the NVIDIA GPU Operator. By the end of the course, students can package a containerized AI application with Helm, provision its infrastructure with Terraform, and monitor it in production with Prometheus and Grafana.",
+      "objectives": [
+        "Explain containerization and build optimized Docker images for AI/Python applications.",
+        "Compose and run multi-container AI stacks locally, including GPU-enabled containers via the NVIDIA Container Toolkit.",
+        "Deploy and manage AI workloads on Kubernetes using pods, deployments, services, config, and persistent storage.",
+        "Configure resource limits, autoscaling, and GPU-aware scheduling with the NVIDIA GPU Operator.",
+        "Package, provision, monitor, and troubleshoot containerized AI systems using Helm, Terraform, and Prometheus/Grafana."
+      ],
+      "slos": [
+        "Explain containerization and build optimized Docker images for AI/Python applications.",
+        "Compose and run multi-container AI stacks locally, including GPU-enabled containers via the NVIDIA Container Toolkit.",
+        "Deploy and manage AI workloads on Kubernetes using pods, deployments, services, config, and persistent storage.",
+        "Configure resource limits, autoscaling, and GPU-aware scheduling with the NVIDIA GPU Operator.",
+        "Package, provision, monitor, and troubleshoot containerized AI systems using Helm, Terraform, and Prometheus/Grafana."
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "title": "Why Containers for AI: VMs, Images, and the Docker Model",
+          "summary": "Introduces containerization concepts, contrasting VMs and container images, and the Docker model for packaging AI apps."
+        },
+        {
+          "n": 2,
+          "title": "Docker Fundamentals: Running and Managing Containers",
+          "summary": "Covers the container lifecycle — running, inspecting, executing into, and managing Docker containers with resource and port controls."
+        },
+        {
+          "n": 3,
+          "title": "Building AI Container Images with Dockerfiles",
+          "summary": "Teaches Dockerfile fundamentals, layer caching, multi-stage builds, and security practices for containerizing AI inference apps."
+        },
+        {
+          "n": 4,
+          "title": "Docker Compose and Multi-Container AI Applications",
+          "summary": "Uses Docker Compose to define and run multi-container AI application stacks locally."
+        },
+        {
+          "n": 5,
+          "title": "GPU Containers and the NVIDIA Container Toolkit",
+          "summary": "Covers running GPU-enabled containers using the NVIDIA Container Toolkit for AI workloads."
+        },
+        {
+          "n": 6,
+          "title": "Container Registries, Tagging, and Image Security",
+          "summary": "Covers pushing images to registries, semantic versioning tag strategy, and scanning images for vulnerabilities with Trivy."
+        },
+        {
+          "n": 7,
+          "title": "Introduction to Kubernetes: Architecture and kubectl",
+          "summary": "Introduces Kubernetes architecture and the kubectl command-line tool for interacting with a cluster."
+        },
+        {
+          "n": 8,
+          "title": "Kubernetes Workloads: Deployments, Services, and Config",
+          "summary": "Covers Kubernetes Deployments, Services, and configuration objects. This week includes the course midterm."
+        },
+        {
+          "n": 9,
+          "title": "Deploying an AI Inference App to Kubernetes",
+          "summary": "Applies Kubernetes fundamentals to deploy a real AI inference application onto a cluster."
+        },
+        {
+          "n": 10,
+          "title": "Scaling and Resource Management with the Horizontal Pod Autoscaler",
+          "summary": "Covers resource requests/limits and autoscaling AI workloads with the Kubernetes Horizontal Pod Autoscaler."
+        },
+        {
+          "n": 11,
+          "title": "GPU-Aware Kubernetes with the NVIDIA GPU Operator",
+          "summary": "Covers GPU-aware scheduling in Kubernetes using the NVIDIA GPU Operator and device plugin."
+        },
+        {
+          "n": 12,
+          "title": "Storage, Volumes, and Persistence for AI Models and Data",
+          "summary": "Covers Kubernetes storage, volumes, and persistence strategies for AI models and datasets."
+        },
+        {
+          "n": 13,
+          "title": "Packaging Kubernetes Apps with Helm",
+          "summary": "Teaches packaging and deploying Kubernetes applications as reusable charts with Helm."
+        },
+        {
+          "n": 14,
+          "title": "Infrastructure as Code with Terraform",
+          "summary": "Introduces Terraform's declarative model — providers, resources, and state — to provision a local Kubernetes cluster and app as code."
+        },
+        {
+          "n": 15,
+          "title": "Monitoring, Logging, and Troubleshooting Containerized AI",
+          "summary": "Covers installing the kube-prometheus-stack, reading GPU metrics via DCGM Exporter, and troubleshooting failing pods with kubectl."
+        },
+        {
+          "n": 16,
+          "title": "Capstone Project & Course Review",
+          "summary": "Students design, build, and present a final capstone project demonstrating mastery of the course's containerization and orchestration outcomes."
+        }
+      ],
+      "midtermWeek": 8,
+      "capstoneWeek": 16,
+      "tools": [
+        {
+          "group": "Containers",
+          "items": [
+            "Docker",
+            "Docker Compose",
+            "NVIDIA Container Toolkit"
+          ]
+        },
+        {
+          "group": "Orchestration",
+          "items": [
+            "kubectl",
+            "minikube/kind",
+            "Deployments/Services/Ingress",
+            "Horizontal Pod Autoscaler"
+          ]
+        },
+        {
+          "group": "GPU Scheduling",
+          "items": [
+            "NVIDIA GPU Operator",
+            "Device plugin",
+            "GPU resource requests",
+            "DCGM Exporter"
+          ]
+        },
+        {
+          "group": "Packaging & Infrastructure as Code",
+          "items": [
+            "Helm",
+            "Terraform"
+          ]
+        },
+        {
+          "group": "Registries & Security",
+          "items": [
+            "Docker Hub",
+            "GitHub Container Registry",
+            "Trivy image scanning"
+          ]
+        },
+        {
+          "group": "Monitoring",
+          "items": [
+            "Prometheus",
+            "Grafana",
+            "Liveness/readiness probes"
+          ]
+        }
+      ],
+      "socs": [
+        "15-1241",
+        "15-1244",
+        "15-1252"
+      ]
+    },
+    {
+      "code": "200",
+      "title": "Cloud Platforms for AI & CI/CD for ML",
+      "subtitle": "Deploy and automate AI workloads on AWS, Azure, and Google Cloud",
+      "semester": 2,
+      "hours": 54,
+      "unitEquivalent": 3,
+      "prereq": "AIINFRA 102",
+      "next": "201",
+      "description": "This course prepares students to deploy, automate, and operate AI/ML workloads on major cloud platforms. Students will provision cloud infrastructure across AWS, Azure, and Google Cloud, then build CI/CD pipelines with GitHub Actions to automatically test, build, and deploy containerized model services. The course concludes with MLOps foundations — experiment tracking, model registries, and infrastructure-as-code — culminating in an end-to-end, automated, cost-aware deployment pipeline for a machine learning application.",
+      "objectives": [
+        "Provision and secure cloud resources (accounts, IAM, networking, cost controls) for AI workloads across AWS, Azure, and Google Cloud.",
+        "Deploy AI workloads using cloud compute, GPU instances, object storage, and managed AI/ML services.",
+        "Build CI/CD pipelines with GitHub Actions that test, build, and deploy containerized model services automatically.",
+        "Apply MLOps foundations — experiment tracking, model registry, and reproducible pipelines — with MLflow and Terraform.",
+        "Monitor, right-size, and cost-optimize cloud AI deployments, choosing appropriate services for a given use case."
+      ],
+      "slos": [
+        "Provision and secure cloud resources (accounts, IAM, networking, cost controls) for AI workloads across AWS, Azure, and Google Cloud.",
+        "Deploy AI workloads using cloud compute, GPU instances, object storage, and managed AI/ML services.",
+        "Build CI/CD pipelines with GitHub Actions that test, build, and deploy containerized model services automatically.",
+        "Apply MLOps foundations — experiment tracking, model registry, and reproducible pipelines — with MLflow and Terraform.",
+        "Monitor, right-size, and cost-optimize cloud AI deployments, choosing appropriate services for a given use case."
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "title": "Cloud Computing for AI: Providers, Regions, and Free Tiers",
+          "summary": "Introduces AWS, Azure, and Google Cloud free-tier structures, and the distinction between cloud regions and Availability Zones."
+        },
+        {
+          "n": 2,
+          "title": "Cloud Accounts, IAM, and Cost Guardrails",
+          "summary": "Covers least-privilege IAM, multi-account guardrails, and configuring AWS Budgets to control cloud spending."
+        },
+        {
+          "n": 3,
+          "title": "Cloud Compute for AI: VMs, GPU Instances, and Spot Pricing",
+          "summary": "Compares On-Demand, Spot, and GPU instance pricing models and teaches checkpointing strategies for interruptible training."
+        },
+        {
+          "n": 4,
+          "title": "Cloud Storage and Data for AI: Object Storage and Buckets",
+          "summary": "Covers S3 buckets, storage classes, lifecycle rules, versioning, and security defaults for AI data storage."
+        },
+        {
+          "n": 5,
+          "title": "Managed AI/ML Services: SageMaker, Vertex AI, and Azure ML",
+          "summary": "Compares the architecture and philosophy of SageMaker AI, Vertex AI (Gemini Enterprise Agent Platform), and Azure Machine Learning."
+        },
+        {
+          "n": 6,
+          "title": "Serverless and Managed Kubernetes in the Cloud",
+          "summary": "Covers AWS Lambda serverless compute, managed Kubernetes options (EKS, GKE Autopilot), and KServe model serving."
+        },
+        {
+          "n": 7,
+          "title": "Infrastructure as Code for Cloud AI with Terraform",
+          "summary": "Teaches the Terraform workflow, state management, and provisioning free-tier cloud AI infrastructure as code."
+        },
+        {
+          "n": 8,
+          "title": "Cloud Security, Networking, and Secrets",
+          "summary": "Covers security groups vs. network ACLs, secrets management, and GitHub Actions OIDC authentication; this week includes the course midterm."
+        },
+        {
+          "n": 9,
+          "title": "Introduction to CI/CD and GitHub Actions",
+          "summary": "Introduces Continuous Integration, Delivery, and Deployment concepts and building a first GitHub Actions workflow."
+        },
+        {
+          "n": 10,
+          "title": "Continuous Integration for ML: Testing and Image Builds",
+          "summary": "Extends CI with data-quality and model-evaluation gates, and builds reproducible Docker image pipelines."
+        },
+        {
+          "n": 11,
+          "title": "Continuous Delivery for ML: Automated Model Deployment",
+          "summary": "Covers blue-green vs. canary deployment strategies and building tested rollback plans for model releases."
+        },
+        {
+          "n": 12,
+          "title": "MLOps Foundations: Experiment Tracking and Model Registry with MLflow",
+          "summary": "Introduces MLflow Tracking and Model Registry for logging experiments and governing model versions."
+        },
+        {
+          "n": 13,
+          "title": "End-to-End Automated Model Deployment Pipelines",
+          "summary": "Chains CI/CD and MLOps tools into a full automated pipeline from code commit to monitored production deployment."
+        },
+        {
+          "n": 14,
+          "title": "Monitoring and Cost Optimization for Cloud AI",
+          "summary": "Covers CloudWatch metrics, logs, and alarms alongside cost optimization levers for cloud AI workloads."
+        },
+        {
+          "n": 15,
+          "title": "Multi-Cloud, Portability, and GitOps",
+          "summary": "Covers GitOps principles, ArgoCD vs. Flux, and the real costs and limits of multi-cloud portability."
+        },
+        {
+          "n": 16,
+          "title": "Capstone Project & Course Review",
+          "summary": "Students design and partially build an end-to-end cloud AI system as a final capstone project and reflect on the course."
+        }
+      ],
+      "midtermWeek": 8,
+      "capstoneWeek": 16,
+      "tools": [
+        {
+          "group": "Cloud Platforms",
+          "items": [
+            "AWS",
+            "Microsoft Azure",
+            "Google Cloud"
+          ]
+        },
+        {
+          "group": "Compute & Storage",
+          "items": [
+            "EC2 / Compute Engine / Azure VMs",
+            "GPU instances (G5, P5, Trainium3)",
+            "S3 / GCS / Blob Storage"
+          ]
+        },
+        {
+          "group": "Managed AI/ML Services",
+          "items": [
+            "AWS SageMaker",
+            "Google Vertex AI (Gemini Enterprise Agent Platform)",
+            "Azure Machine Learning"
+          ]
+        },
+        {
+          "group": "CI/CD",
+          "items": [
+            "GitHub Actions",
+            "act (local runner)",
+            "Docker container image build/push",
+            "GitHub Container Registry (GHCR)"
+          ]
+        },
+        {
+          "group": "MLOps",
+          "items": [
+            "MLflow (tracking + model registry)",
+            "Great Expectations",
+            "Docker"
+          ]
+        },
+        {
+          "group": "IaC, Orchestration & Monitoring",
+          "items": [
+            "Terraform",
+            "LocalStack",
+            "Kubernetes (EKS, GKE Autopilot, Minikube, kind)",
+            "ArgoCD / Flux",
+            "Prometheus/Grafana",
+            "CloudWatch"
+          ]
+        }
+      ],
+      "socs": [
+        "15-1252",
+        "15-1299",
+        "11-3021"
+      ]
+    },
+    {
+      "code": "201",
+      "title": "Production Inference Serving & GPU Orchestration",
+      "subtitle": "Deploying, Scaling, and Operating LLMs in Production on GPUs",
+      "semester": 2,
+      "hours": 54,
+      "unitEquivalent": 3,
+      "prereq": "AIINFRA 200",
+      "next": "202",
+      "description": "This course trains learners to move beyond local, single-user model runners and into production-grade LLM inference serving. Students build a lean Linux and Docker foundation, then learn high-throughput serving engines such as vLLM, TGI, TensorRT-LLM, and SGLang alongside serving platforms like Triton, Ray Serve, and KServe. The back half of the course covers GPU orchestration on Kubernetes, including the GPU Operator, Dynamic Resource Allocation, MIG partitioning, multi-GPU parallelism, and disaggregated prefill/decode. Learners finish able to benchmark, monitor, autoscale, and right-size real inference workloads for cost and performance.",
+      "objectives": [
+        "Deploy containerized Linux services and distinguish dev/prototyping tools from production-grade inference stacks",
+        "Configure and tune production inference servers (vLLM, TGI, TensorRT-LLM, SGLang) for high-throughput, low-latency serving",
+        "Orchestrate GPU resources on Kubernetes using the GPU Operator, Dynamic Resource Allocation, MIG, and the KAI Scheduler",
+        "Implement multi-GPU tensor and pipeline parallelism with autoscaling and load balancing for large models",
+        "Benchmark, monitor, and cost-optimize inference deployments using Prometheus, Grafana, and disaggregated serving architectures"
+      ],
+      "slos": [
+        "Deploy containerized Linux services and distinguish dev/prototyping tools from production-grade inference stacks.",
+        "Configure and tune production inference servers (vLLM, TGI, TensorRT-LLM, SGLang) for high-throughput, low-latency serving.",
+        "Orchestrate GPU resources on Kubernetes using the GPU Operator, Dynamic Resource Allocation, MIG, and the KAI Scheduler.",
+        "Implement multi-GPU tensor and pipeline parallelism with autoscaling and load balancing for large models.",
+        "Benchmark, monitor, and cost-optimize inference deployments using Prometheus, Grafana, and disaggregated serving architectures."
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "title": "Linux Server Foundations for AI Workloads",
+          "summary": "Builds the Linux server and systemd foundation needed to host AI workloads ahead of containerized and GPU-backed inference work."
+        },
+        {
+          "n": 2,
+          "title": "Docker, GPU Runtime, and Dev-Only Tools (Ollama, LM Studio)",
+          "summary": "Covers Docker and the NVIDIA Container Toolkit while framing Ollama and LM Studio as dev-only tools, not production serving."
+        },
+        {
+          "n": 3,
+          "title": "Production Inference Fundamentals and the vLLM Engine",
+          "summary": "Introduces production inference serving fundamentals and configuring the vLLM engine for high-throughput serving."
+        },
+        {
+          "n": 4,
+          "title": "PagedAttention and Continuous Batching Deep Dive",
+          "summary": "Examines PagedAttention and continuous batching, the core techniques behind high-throughput LLM serving engines."
+        },
+        {
+          "n": 5,
+          "title": "Hugging Face TGI and SGLang Serving Engines",
+          "summary": "Covers configuring and tuning the Hugging Face TGI and SGLang serving engines as alternatives to vLLM."
+        },
+        {
+          "n": 6,
+          "title": "TensorRT-LLM Compilation and Optimization",
+          "summary": "Covers compiling and optimizing models for serving with NVIDIA TensorRT-LLM."
+        },
+        {
+          "n": 7,
+          "title": "NVIDIA Triton Inference Server and Model Repositories",
+          "summary": "Introduces NVIDIA Triton Inference Server and structuring model repositories for production serving."
+        },
+        {
+          "n": 8,
+          "title": "Serving Engine Benchmarking Lab",
+          "summary": "Midterm week: students benchmark serving engines covered so far in a hands-on lab."
+        },
+        {
+          "n": 9,
+          "title": "Ray Serve and KServe for Scalable Model Serving",
+          "summary": "Covers Ray Serve and KServe as scalable serving platforms for production model deployment."
+        },
+        {
+          "n": 10,
+          "title": "GPU Orchestration on Kubernetes with the NVIDIA GPU Operator",
+          "summary": "Introduces GPU orchestration on Kubernetes using the NVIDIA GPU Operator to manage GPU resources for inference workloads."
+        },
+        {
+          "n": 11,
+          "title": "Dynamic Resource Allocation and MIG Partitioning",
+          "summary": "Covers Kubernetes Dynamic Resource Allocation and NVIDIA MIG partitioning for fine-grained GPU resource sharing."
+        },
+        {
+          "n": 12,
+          "title": "Multi-GPU Tensor and Pipeline Parallelism",
+          "summary": "Covers implementing multi-GPU tensor and pipeline parallelism to serve large models across multiple GPUs."
+        },
+        {
+          "n": 13,
+          "title": "Autoscaling, Load Balancing, and the KAI Scheduler",
+          "summary": "Covers autoscaling, load balancing, and the KAI Scheduler for managing inference workload demand on Kubernetes."
+        },
+        {
+          "n": 14,
+          "title": "Disaggregated Prefill/Decode with NVIDIA Dynamo",
+          "summary": "Introduces disaggregated prefill/decode serving architectures using NVIDIA Dynamo."
+        },
+        {
+          "n": 15,
+          "title": "Observability, Cost Analysis, and Right-Sizing",
+          "summary": "Covers observability, cost analysis, and right-sizing techniques for production inference deployments."
+        },
+        {
+          "n": 16,
+          "title": "Capstone Project & Course Review",
+          "summary": "Final capstone week: students design, deploy, and present a production inference serving and GPU orchestration project."
+        }
+      ],
+      "midtermWeek": 8,
+      "capstoneWeek": 16,
+      "tools": [
+        {
+          "group": "OS & Containers",
+          "items": [
+            "Ubuntu Server",
+            "systemd",
+            "Docker",
+            "NVIDIA Container Toolkit"
+          ]
+        },
+        {
+          "group": "Dev/Prototyping Tools",
+          "items": [
+            "Ollama",
+            "LM Studio"
+          ]
+        },
+        {
+          "group": "Inference Engines",
+          "items": [
+            "vLLM",
+            "Hugging Face TGI",
+            "TensorRT-LLM",
+            "SGLang"
+          ]
+        },
+        {
+          "group": "Serving Platforms",
+          "items": [
+            "NVIDIA Triton Inference Server",
+            "Ray Serve",
+            "KServe"
+          ]
+        },
+        {
+          "group": "Kubernetes & GPU Orchestration",
+          "items": [
+            "Kubernetes",
+            "NVIDIA GPU Operator",
+            "Dynamic Resource Allocation",
+            "MIG",
+            "KAI Scheduler",
+            "NVIDIA Dynamo"
+          ]
+        },
+        {
+          "group": "Observability & Benchmarking",
+          "items": [
+            "Prometheus",
+            "Grafana",
+            "k6",
+            "NVIDIA Nsight Systems"
+          ]
+        },
+        {
+          "group": "Cloud & Hardware",
+          "items": [
+            "NVIDIA A100/H100 GPUs",
+            "Hetzner/DigitalOcean GPU instances",
+            "NCCL"
+          ]
+        }
+      ],
+      "socs": [
+        "15-1252",
+        "15-1299"
+      ]
+    },
+    {
+      "code": "202",
+      "title": "Model Adaptation — Fine-Tuning & Quantization",
+      "subtitle": "Customize and compress open-weight LLMs on consumer and cloud GPUs",
+      "semester": 2,
+      "hours": 54,
+      "unitEquivalent": 3,
+      "prereq": "AIINFRA 201",
+      "next": "300",
+      "description": "This hands-on course teaches adult learners to adapt open-weight language models to specific tasks and domains without enterprise-scale hardware. Students learn to decide when to fine-tune versus prompt-engineer or use RAG, build and format instruction datasets, and run supervised and parameter-efficient fine-tuning (LoRA, QLoRA, PEFT) plus preference tuning with DPO using Hugging Face, Unsloth, and Axolotl. The course also covers quantization formats (GGUF, AWQ, GPTQ, FP8), KV-cache quantization, and knowledge distillation to shrink models for deployment. Learners evaluate adapted models, guard against overfitting and catastrophic forgetting, and address the licensing and ethics of model weights and training data.",
+      "objectives": [
+        "Evaluate a task and choose correctly among prompt engineering, retrieval-augmented generation, and fine-tuning, justifying the decision by cost, data availability, and hardware limits.",
+        "Build, clean, and format instruction and chat datasets and run supervised and parameter-efficient fine-tuning (LoRA, QLoRA, PEFT) on a single consumer or cloud GPU.",
+        "Apply preference tuning with DPO and track experiments to improve a model while avoiding overfitting and catastrophic forgetting.",
+        "Quantize models into GGUF, AWQ, GPTQ, and FP8 formats and analyze the resulting precision, quality, and memory tradeoffs.",
+        "Assess licensing and ethical constraints on model weights and training data and package an adapted, quantized model for serving."
+      ],
+      "slos": [
+        "Choose correctly among prompt engineering, RAG, and fine-tuning for a given task, cost, and hardware budget.",
+        "Build instruction/chat datasets and run SFT and parameter-efficient fine-tuning (LoRA/QLoRA/PEFT) on a single GPU.",
+        "Apply DPO preference tuning and track experiments while avoiding overfitting and catastrophic forgetting.",
+        "Quantize models to GGUF, AWQ, GPTQ, and FP8 and analyze precision, quality, and memory tradeoffs.",
+        "Evaluate model-weight and training-data licensing/ethics and package an adapted, quantized model for serving."
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "title": "Adapt, Prompt, or Retrieve: The Model Customization Decision",
+          "summary": "Introduces the canonical decision sequence — prompt engineering, then RAG, then fine-tuning — and when each is justified by cost, data, and hardware."
+        },
+        {
+          "n": 2,
+          "title": "Open Models, Licenses, and the Fine-Tuning Toolchain Setup",
+          "summary": "Surveys open-weight model families and licenses and sets up the fine-tuning toolchain used throughout the course."
+        },
+        {
+          "n": 3,
+          "title": "Dataset Design and Data Preparation for Fine-Tuning",
+          "summary": "Covers designing, cleaning, and preparing datasets suitable for supervised fine-tuning."
+        },
+        {
+          "n": 4,
+          "title": "Instruction and Chat Formatting, Tokenization, and Templates",
+          "summary": "Covers instruction and chat formatting conventions, tokenization, and chat templates used to prepare training data."
+        },
+        {
+          "n": 5,
+          "title": "Supervised Fine-Tuning Fundamentals with Hugging Face TRL",
+          "summary": "Introduces supervised fine-tuning fundamentals using the Hugging Face TRL library."
+        },
+        {
+          "n": 6,
+          "title": "Parameter-Efficient Fine-Tuning: LoRA and PEFT",
+          "summary": "Covers parameter-efficient fine-tuning methods, focusing on LoRA and the Hugging Face PEFT library."
+        },
+        {
+          "n": 7,
+          "title": "QLoRA and Training on Consumer GPUs with Unsloth",
+          "summary": "Covers QLoRA and using Unsloth to train models efficiently on consumer-grade GPUs."
+        },
+        {
+          "n": 8,
+          "title": "Axolotl, Config-Driven Training, and Experiment Tracking",
+          "summary": "Midterm week: covers config-driven training with Axolotl and experiment tracking practices."
+        },
+        {
+          "n": 9,
+          "title": "Preference Tuning: DPO in Practice (with a Look at GRPO)",
+          "summary": "Covers Direct Preference Optimization in practice and contrasts it with GRPO's group-relative reward approach."
+        },
+        {
+          "n": 10,
+          "title": "Evaluating Fine-Tuned Models and Detecting Overfitting",
+          "summary": "Covers evaluation methods for fine-tuned models and techniques for detecting overfitting."
+        },
+        {
+          "n": 11,
+          "title": "Catastrophic Forgetting, Adapter Merging, and Cloud Training",
+          "summary": "Covers catastrophic forgetting, merging trained adapters into base models, and moving training workloads to the cloud."
+        },
+        {
+          "n": 12,
+          "title": "Quantization Foundations: Precision, GGUF, and llama.cpp",
+          "summary": "Introduces quantization foundations, numeric precision tradeoffs, the GGUF format, and llama.cpp."
+        },
+        {
+          "n": 13,
+          "title": "Advanced Quantization: AWQ, GPTQ, FP8, and KV-Cache Quantization",
+          "summary": "Covers advanced quantization methods including AWQ, GPTQ, FP8, and KV-cache quantization."
+        },
+        {
+          "n": 14,
+          "title": "Knowledge Distillation and Quality-Size Tradeoff Analysis",
+          "summary": "Covers knowledge distillation techniques and analyzing quality-versus-size tradeoffs for compressed models."
+        },
+        {
+          "n": 15,
+          "title": "Serving Adapted and Quantized Models — Handoff to AIINFRA 201",
+          "summary": "Covers serving fine-tuned, quantized models and preparing a handoff document for production serving in AIINFRA 201."
+        },
+        {
+          "n": 16,
+          "title": "Capstone Project & Course Review",
+          "summary": "Final capstone week: students package and present an adapted, quantized model ready for deployment."
+        }
+      ],
+      "midtermWeek": 8,
+      "capstoneWeek": 16,
+      "tools": [
+        {
+          "group": "Fine-tuning libraries",
+          "items": [
+            "Hugging Face Transformers",
+            "PEFT",
+            "TRL"
+          ]
+        },
+        {
+          "group": "Accelerated training",
+          "items": [
+            "Unsloth",
+            "Axolotl",
+            "bitsandbytes"
+          ]
+        },
+        {
+          "group": "Quantization",
+          "items": [
+            "llama.cpp/GGUF",
+            "AutoAWQ",
+            "GPTQModel",
+            "llm-compressor (FP8)"
+          ]
+        },
+        {
+          "group": "Experiment tracking",
+          "items": [
+            "Weights & Biases",
+            "TensorBoard",
+            "Hugging Face Hub"
+          ]
+        },
+        {
+          "group": "Compute platforms",
+          "items": [
+            "Google Colab",
+            "Kaggle Notebooks",
+            "RunPod",
+            "Lambda Cloud"
+          ]
+        },
+        {
+          "group": "Datasets and models",
+          "items": [
+            "Hugging Face Datasets",
+            "Hub model cards",
+            "meta-llama/Qwen/Mistral/Gemma open weights"
+          ]
+        },
+        {
+          "group": "Evaluation",
+          "items": [
+            "lm-evaluation-harness",
+            "LLM-as-judge",
+            "custom held-out test sets"
+          ]
+        },
+        {
+          "group": "Serving handoff",
+          "items": [
+            "Ollama",
+            "vLLM",
+            "LM Studio",
+            "text-generation-inference"
+          ]
+        }
+      ],
+      "socs": [
+        "15-2051",
+        "15-1299"
+      ]
+    },
+    {
+      "code": "300",
+      "title": "Agentic AI & the Model Context Protocol (MCP)",
+      "subtitle": "Building, Securing, and Orchestrating Production AI Agents with MCP",
+      "semester": 3,
+      "hours": 54,
+      "unitEquivalent": 3,
+      "prereq": "AIINFRA 202",
+      "next": "301",
+      "description": "This course teaches learners to design, build, and deploy production-grade AI agents using leading provider APIs (OpenAI, Anthropic Claude, AWS Bedrock, Google Vertex, OpenRouter), code-first agent frameworks (LangGraph, CrewAI, OpenAI Agents SDK, Pydantic AI), and the Model Context Protocol (MCP) for standardized tool and context integration. Learners implement multi-agent orchestration, human-in-the-loop workflows, agent evaluation, observability, and guardrails while instrumenting cost, latency, and reliability across providers. The course culminates in a capstone deploying a secure, observable, multi-agent MCP-based system.",
+      "objectives": [
+        "Build agents that call multiple LLM provider APIs (OpenAI, Claude, Bedrock, Vertex, OpenRouter) with cost, latency, and observability instrumentation",
+        "Implement core agent patterns including tool calling, ReAct, planning, and memory/state management from first principles",
+        "Construct production agents using code-first frameworks such as LangGraph, CrewAI, OpenAI Agents SDK, and Pydantic AI",
+        "Design and deploy MCP servers exposing tools and resources with proper authentication and security controls",
+        "Orchestrate multi-agent systems with handoffs, human-in-the-loop checkpoints, and evaluate agent performance using observability tooling"
+      ],
+      "slos": [
+        "Build and instrument agents that call OpenAI, Claude, Bedrock, Vertex, and OpenRouter for cost, latency, and reliability.",
+        "Implement tool calling, ReAct, planning, and memory/state management from first principles.",
+        "Construct production agents with LangGraph, CrewAI, the OpenAI Agents SDK, and Pydantic AI.",
+        "Design, secure, and deploy MCP servers that expose tools and resources with proper authentication.",
+        "Orchestrate multi-agent systems with handoffs and human-in-the-loop checkpoints, evaluated with observability tooling."
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "title": "Agentic AI Foundations and the Provider Landscape",
+          "summary": "Introduces agentic AI concepts and surveys the provider landscape (OpenAI, Claude, Bedrock, Vertex, OpenRouter) that agents will call."
+        },
+        {
+          "n": 2,
+          "title": "Tool Calling, ReAct, and Agent Planning Patterns",
+          "summary": "Covers core agent patterns including tool calling, the ReAct loop, and planning strategies from first principles."
+        },
+        {
+          "n": 3,
+          "title": "Memory and State Management for Agents",
+          "summary": "Covers memory and state management techniques that let agents retain context across multi-step interactions."
+        },
+        {
+          "n": 4,
+          "title": "OpenAI, Claude, and Multi-Provider API Integration",
+          "summary": "Covers integrating OpenAI and Anthropic Claude APIs into agents alongside multi-provider integration patterns."
+        },
+        {
+          "n": 5,
+          "title": "AWS Bedrock, Google Vertex AI, and OpenRouter Routing",
+          "summary": "Covers integrating AWS Bedrock and Google Vertex AI and routing requests through OpenRouter."
+        },
+        {
+          "n": 6,
+          "title": "Cost, Latency, and Observability Instrumentation",
+          "summary": "Covers instrumenting agent calls for cost, latency, and observability across providers."
+        },
+        {
+          "n": 7,
+          "title": "Code-First Agent Frameworks I: LangGraph and Pydantic AI",
+          "summary": "Introduces building production agents with the code-first LangGraph and Pydantic AI frameworks."
+        },
+        {
+          "n": 8,
+          "title": "Code-First Agent Frameworks II: CrewAI and OpenAI Agents SDK",
+          "summary": "Midterm week: covers CrewAI and the OpenAI Agents SDK alongside the course midterm assessment."
+        },
+        {
+          "n": 9,
+          "title": "MCP Architecture Deep Dive",
+          "summary": "Provides a deep dive into Model Context Protocol architecture for standardized tool and context integration."
+        },
+        {
+          "n": 10,
+          "title": "Building MCP Servers: Tools and Resources",
+          "summary": "Covers building MCP servers that expose tools and resources to agent clients."
+        },
+        {
+          "n": 11,
+          "title": "MCP Authentication and Tool/Agent Security",
+          "summary": "Covers MCP authentication mechanisms and security controls for tools and agents."
+        },
+        {
+          "n": 12,
+          "title": "Multi-Agent Orchestration and Handoffs",
+          "summary": "Covers orchestrating multi-agent systems, including handoffs between cooperating agents."
+        },
+        {
+          "n": 13,
+          "title": "Human-in-the-Loop Workflows and Emerging Standards (A2A, AGENTS.md)",
+          "summary": "Covers human-in-the-loop checkpoints alongside emerging agent standards such as A2A and AGENTS.md."
+        },
+        {
+          "n": 14,
+          "title": "Agent Evaluation and Observability",
+          "summary": "Covers evaluating agent performance and instrumenting agents with observability tooling."
+        },
+        {
+          "n": 15,
+          "title": "Agent Deployment and Guardrails Introduction",
+          "summary": "Covers deploying agents to production and introduces guardrails for safe agent behavior."
+        },
+        {
+          "n": 16,
+          "title": "Capstone Project & Course Review",
+          "summary": "Final capstone week: students deploy a secure, observable, multi-agent MCP-based system and review the course."
+        }
+      ],
+      "midtermWeek": 8,
+      "capstoneWeek": 16,
+      "tools": [
+        {
+          "group": "Provider APIs",
+          "items": [
+            "OpenAI API",
+            "Anthropic Claude API",
+            "AWS Bedrock",
+            "Google Vertex AI",
+            "OpenRouter"
+          ]
+        },
+        {
+          "group": "Agent Frameworks",
+          "items": [
+            "LangGraph",
+            "CrewAI",
+            "OpenAI Agents SDK",
+            "Pydantic AI"
+          ]
+        },
+        {
+          "group": "MCP Tooling",
+          "items": [
+            "MCP Python SDK",
+            "MCP TypeScript SDK",
+            "MCP Inspector",
+            "Claude Desktop/Code MCP integration"
+          ]
+        },
+        {
+          "group": "Languages/Runtimes",
+          "items": [
+            "Python 3.11+",
+            "Node.js/TypeScript",
+            "uv/pip",
+            "npm"
+          ]
+        },
+        {
+          "group": "Observability",
+          "items": [
+            "LangSmith",
+            "Langfuse",
+            "OpenTelemetry",
+            "Helicone"
+          ]
+        },
+        {
+          "group": "Cost/Latency Monitoring",
+          "items": [
+            "provider usage dashboards",
+            "token counting utilities",
+            "custom logging middleware"
+          ]
+        },
+        {
+          "group": "Orchestration/Deployment",
+          "items": [
+            "Docker",
+            "GitHub Actions",
+            "FastAPI",
+            "ngrok/Cloudflare Tunnel"
+          ]
+        },
+        {
+          "group": "Security",
+          "items": [
+            "OAuth 2.1",
+            "environment-based secrets management",
+            "API key vaults"
+          ]
+        },
+        {
+          "group": "Dev Environment",
+          "items": [
+            "VS Code",
+            "Jupyter",
+            "Postman/Insomnia",
+            "git/GitHub"
+          ]
+        }
+      ],
+      "socs": [
+        "15-1252",
+        "15-1299"
+      ]
+    },
+    {
+      "code": "301",
+      "title": "Production RAG & LLMOps — Observability and Evaluation",
+      "subtitle": "Building, Evaluating, and Operating Retrieval-Augmented LLM Systems in Production",
+      "semester": 3,
+      "hours": 54,
+      "unitEquivalent": 3,
+      "prereq": "AIINFRA 300",
+      "next": "302",
+      "description": "This course prepares learners to design, evaluate, and operate retrieval-augmented generation systems using modern vector databases, hybrid search, and reranking techniques. Students build RAG evaluation pipelines with RAGAS and DeepEval as automated quality gates, then instrument production systems with tracing, prompt versioning, and drift monitoring using industry-standard LLMOps tooling. Emphasis is placed on hands-on labs that mirror real workplace tasks, from indexing strategy selection through cost-aware, observable deployment. Learners exit ready to support or own the retrieval and evaluation layer of an enterprise AI application.",
+      "objectives": [
+        "Select and configure a vector database (Qdrant, Milvus, Weaviate, or pgvector) based on scale, filtering, and indexing tradeoffs",
+        "Design chunking and hybrid retrieval pipelines combining dense embeddings, BM25, and cross-encoder reranking",
+        "Build automated RAG evaluation suites with RAGAS and DeepEval to gate retrieval and generation quality in CI/CD",
+        "Instrument LLM applications with tracing and observability platforms to diagnose latency, cost, and quality regressions",
+        "Implement production monitoring, prompt versioning, and feedback loops to detect and respond to model and data drift"
+      ],
+      "slos": [
+        "Select and configure a vector database (Qdrant, Milvus, Weaviate, or pgvector) based on scale, filtering, and indexing tradeoffs.",
+        "Design chunking and hybrid retrieval pipelines combining dense embeddings, BM25, and cross-encoder reranking.",
+        "Build automated RAG evaluation suites with RAGAS and DeepEval to gate retrieval and generation quality in CI/CD.",
+        "Instrument LLM applications with tracing and observability platforms to diagnose latency, cost, and quality regressions.",
+        "Implement production monitoring, prompt versioning, and feedback loops to detect and respond to model and data drift."
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "title": "Introduction to Production RAG Architecture and the LLMOps Lifecycle",
+          "summary": "Introduces why production RAG systems exist and surveys the LLMOps lifecycle that governs how they are built and operated."
+        },
+        {
+          "n": 2,
+          "title": "Embeddings and Vector Representations for Retrieval",
+          "summary": "Covers embeddings and vector representations, including the indexing pipeline that turns documents and queries into comparable vectors."
+        },
+        {
+          "n": 3,
+          "title": "Vector Database Selection: Qdrant, Milvus, Weaviate, and pgvector",
+          "summary": "Compares Qdrant, Milvus, Weaviate, and pgvector to select a vector database based on scale and filtering needs."
+        },
+        {
+          "n": 4,
+          "title": "Indexing Deep Dive: HNSW vs IVF and Metadata Filtering",
+          "summary": "Covers HNSW versus IVF indexing algorithms and metadata filtering strategies for vector search."
+        },
+        {
+          "n": 5,
+          "title": "Chunking Strategies for Real-World Documents",
+          "summary": "Covers fixed-size, recursive, and semantic chunking strategies for splitting real-world documents."
+        },
+        {
+          "n": 6,
+          "title": "Hybrid Search: Combining Dense Retrieval with BM25",
+          "summary": "Covers hybrid search techniques that combine dense embedding retrieval with sparse BM25 keyword search."
+        },
+        {
+          "n": 7,
+          "title": "Cross-Encoder Rerankers and Query Rewriting/Expansion",
+          "summary": "Covers cross-encoder reranking and query rewriting/expansion techniques such as HyDE to improve retrieval quality."
+        },
+        {
+          "n": 8,
+          "title": "Advanced Retrieval Patterns: GraphRAG and Agentic RAG",
+          "summary": "Midterm week: covers advanced retrieval patterns including GraphRAG and agentic RAG alongside the course midterm assessment."
+        },
+        {
+          "n": 9,
+          "title": "RAG Evaluation Foundations with RAGAS",
+          "summary": "Introduces RAG evaluation foundations using the RAGAS framework to score retrieval and generation quality."
+        },
+        {
+          "n": 10,
+          "title": "Deep Evaluation and Failure Analysis with DeepEval",
+          "summary": "Covers deep evaluation and failure analysis of LLM outputs using DeepEval's Pytest-style testing approach."
+        },
+        {
+          "n": 11,
+          "title": "Wiring Evaluation into CI/CD Quality Gates",
+          "summary": "Covers wiring automated RAG evaluation suites into CI/CD pipelines as quality gates."
+        },
+        {
+          "n": 12,
+          "title": "Tracing and Observability: Langfuse and Arize Phoenix",
+          "summary": "Covers instrumenting LLM applications with tracing and observability using Langfuse and Arize Phoenix."
+        },
+        {
+          "n": 13,
+          "title": "Observability at Scale: LangSmith, OpenLLMetry, and MLflow",
+          "summary": "Covers scaling observability practices using LangSmith, OpenLLMetry, and MLflow."
+        },
+        {
+          "n": 14,
+          "title": "Prompt Management, Versioning, and Release Workflows",
+          "summary": "Covers prompt registries, versioning, immutability, and environment-based release workflows for prompts."
+        },
+        {
+          "n": 15,
+          "title": "Production Monitoring: Drift Detection, Feedback Loops, Cost, and Latency",
+          "summary": "Covers production monitoring for model and data drift, feedback loops, cost, and latency."
+        },
+        {
+          "n": 16,
+          "title": "Capstone Project & Course Review",
+          "summary": "Final capstone week: students design, build, and present a production-grade RAG/LLMOps system and review the course."
+        }
+      ],
+      "midtermWeek": 8,
+      "capstoneWeek": 16,
+      "tools": [
+        {
+          "group": "Vector Databases",
+          "items": [
+            "Qdrant",
+            "Milvus",
+            "Weaviate",
+            "pgvector"
+          ]
+        },
+        {
+          "group": "Embedding & Retrieval Libraries",
+          "items": [
+            "Sentence Transformers",
+            "OpenAI Embeddings API",
+            "rank_bm25",
+            "LangChain retrievers"
+          ]
+        },
+        {
+          "group": "Rerankers & Query Enhancement",
+          "items": [
+            "Cohere Rerank",
+            "cross-encoder models (Hugging Face)",
+            "HyDE query expansion"
+          ]
+        },
+        {
+          "group": "RAG Evaluation Frameworks",
+          "items": [
+            "RAGAS",
+            "DeepEval"
+          ]
+        },
+        {
+          "group": "LLM Observability & Tracing",
+          "items": [
+            "Langfuse",
+            "Arize Phoenix",
+            "LangSmith",
+            "OpenLLMetry"
+          ]
+        },
+        {
+          "group": "MLOps & Experiment Tracking",
+          "items": [
+            "MLflow",
+            "Weights & Biases"
+          ]
+        },
+        {
+          "group": "Low-Code Prototyping On-Ramps",
+          "items": [
+            "n8n",
+            "Langflow",
+            "Flowise"
+          ]
+        }
+      ],
+      "socs": [
+        "15-2051",
+        "15-1299"
+      ]
+    },
+    {
+      "code": "302",
+      "title": "AI Security, Guardrails & Governance",
+      "subtitle": "Securing, Governing, and Cost-Optimizing Production LLM Systems",
+      "semester": 3,
+      "hours": 54,
+      "unitEquivalent": 3,
+      "prereq": "AIINFRA 301",
+      "next": "303",
+      "description": "This hands-on course prepares learners to secure, govern, and financially optimize generative AI and LLM systems in production. Students master the OWASP LLM Top 10 (2025), build layered defenses against prompt injection and jailbreaks, and deploy modern guardrail frameworks such as NVIDIA NeMo Guardrails, Meta Llama Guard 4, and Microsoft Presidio for PII protection. The course also covers AI governance frameworks including the NIST AI RMF, ISO/IEC 42001, and the EU AI Act, along with responsible AI, bias, and fairness practices. Learners finish with GPU FinOps skills to measure and reduce inference cost per 1,000 requests using spot instances, fractional GPUs, quantization, and autoscaling economics.",
+      "objectives": [
+        "Assess LLM applications against the OWASP LLM Top 10 (2025) and construct layered defenses against direct and indirect prompt injection, jailbreaks, and data leakage.",
+        "Deploy and configure production guardrail frameworks (NeMo Guardrails, Llama Guard 4, LLM Guard, Rebuff, and Presidio) to enforce input/output validation and PII redaction.",
+        "Implement AI security controls for data privacy, secrets and access management, model provenance, and supply-chain integrity across the model lifecycle.",
+        "Evaluate AI systems against the NIST AI RMF, ISO/IEC 42001, and EU AI Act, producing model cards, risk documentation, and bias and fairness assessments.",
+        "Calculate and optimize GPU inference economics using cost per 1,000 requests, spot and fractional GPUs, quantization, KV-cache tuning, and autoscaling to make build-vs-buy decisions."
+      ],
+      "slos": [
+        "Assess LLM applications against the OWASP LLM Top 10 and build layered defenses against prompt injection, jailbreaks, and data leakage.",
+        "Deploy and configure production guardrail frameworks such as NeMo Guardrails, Llama Guard 4, LLM Guard, Rebuff, and Presidio for input/output validation and PII redaction.",
+        "Implement AI security controls for data privacy, secrets and access management, model provenance, and supply-chain integrity.",
+        "Evaluate AI systems against the NIST AI RMF, ISO/IEC 42001, and EU AI Act, producing model cards and risk and fairness documentation.",
+        "Calculate and optimize GPU inference economics using cost per 1,000 requests, spot/fractional GPUs, quantization, and autoscaling."
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "title": "AI Security Landscape and the LLM Threat Model",
+          "summary": "Introduces the AI security landscape and establishes a threat model for LLM applications."
+        },
+        {
+          "n": 2,
+          "title": "OWASP LLM Top 10 (2025) Deep Dive",
+          "summary": "Provides a deep dive into the OWASP LLM Top 10 (2025) risk categories for LLM applications."
+        },
+        {
+          "n": 3,
+          "title": "Direct and Indirect Prompt Injection Attacks",
+          "summary": "Covers direct and indirect prompt injection attack techniques against LLM applications."
+        },
+        {
+          "n": 4,
+          "title": "Prompt Injection Defenses and Input Validation",
+          "summary": "Covers layered defenses and input validation strategies against prompt injection attacks."
+        },
+        {
+          "n": 5,
+          "title": "Jailbreaks, Red-Teaming, and Adversarial Testing",
+          "summary": "Covers jailbreak techniques and red-teaming/adversarial testing methods for LLM systems."
+        },
+        {
+          "n": 6,
+          "title": "Guardrails Frameworks: NeMo Guardrails and LLM Guard",
+          "summary": "Covers deploying and configuring the NeMo Guardrails and LLM Guard guardrail frameworks."
+        },
+        {
+          "n": 7,
+          "title": "Content Safety and Moderation with Llama Guard 4 and Rebuff",
+          "summary": "Covers content safety and moderation using Llama Guard 4 and Rebuff."
+        },
+        {
+          "n": 8,
+          "title": "PII Protection with Presidio and Output Validation",
+          "summary": "Midterm week: covers PII protection with Microsoft Presidio and output validation, alongside the course midterm exam covering weeks 1-7."
+        },
+        {
+          "n": 9,
+          "title": "Data Privacy, Secrets Management, and Access Control",
+          "summary": "Covers data privacy practices, secrets management, and access control for AI systems."
+        },
+        {
+          "n": 10,
+          "title": "Model Provenance and AI Supply-Chain Security",
+          "summary": "Covers model provenance tracking and AI supply-chain security controls."
+        },
+        {
+          "n": 11,
+          "title": "AI Governance Frameworks: NIST AI RMF, ISO/IEC 42001, and the EU AI Act",
+          "summary": "Covers evaluating AI systems against the NIST AI RMF, ISO/IEC 42001, and the EU AI Act."
+        },
+        {
+          "n": 12,
+          "title": "Responsible AI, Bias, Fairness, and Model Cards",
+          "summary": "Covers responsible AI practices, bias and fairness assessment, and producing model cards."
+        },
+        {
+          "n": 13,
+          "title": "GPU FinOps Foundations: Cost per 1,000 Requests and Right-Sizing",
+          "summary": "Introduces GPU FinOps foundations, including cost per 1,000 requests and right-sizing inference deployments."
+        },
+        {
+          "n": 14,
+          "title": "Fractional GPUs, MIG, Quantization, and KV-Cache Savings",
+          "summary": "Covers cost savings from fractional GPUs, NVIDIA MIG, quantization, and KV-cache tuning."
+        },
+        {
+          "n": 15,
+          "title": "Autoscaling Economics, Spot Instances, and Build-vs-Buy",
+          "summary": "Covers autoscaling economics, spot instance usage, and build-vs-buy decisions for inference."
+        },
+        {
+          "n": 16,
+          "title": "Capstone Project & Course Review",
+          "summary": "Final capstone week: students deliver a project tying together security, governance, and cost optimization, and review the course."
+        }
+      ],
+      "midtermWeek": 8,
+      "capstoneWeek": 16,
+      "tools": [
+        {
+          "group": "Security & Red-Teaming",
+          "items": [
+            "OWASP LLM Top 10 (2025)",
+            "Garak",
+            "PyRIT",
+            "Promptfoo"
+          ]
+        },
+        {
+          "group": "Guardrails",
+          "items": [
+            "NVIDIA NeMo Guardrails",
+            "LLM Guard",
+            "Rebuff",
+            "Guardrails AI"
+          ]
+        },
+        {
+          "group": "Content Safety",
+          "items": [
+            "Meta Llama Guard 4",
+            "Llama Prompt Guard 2",
+            "OpenAI Moderation API",
+            "Azure AI Content Safety"
+          ]
+        },
+        {
+          "group": "PII & Privacy",
+          "items": [
+            "Microsoft Presidio",
+            "spaCy",
+            "Faker",
+            "Nightfall AI"
+          ]
+        },
+        {
+          "group": "Structured Output & Validation",
+          "items": [
+            "Pydantic",
+            "Instructor",
+            "Outlines",
+            "JSON Schema"
+          ]
+        },
+        {
+          "group": "Governance Frameworks",
+          "items": [
+            "NIST AI RMF 1.0",
+            "ISO/IEC 42001",
+            "EU AI Act",
+            "MITRE ATLAS"
+          ]
+        },
+        {
+          "group": "Documentation & Fairness",
+          "items": [
+            "Hugging Face Model Cards",
+            "Fairlearn",
+            "AI Fairness 360",
+            "Croissant metadata"
+          ]
+        },
+        {
+          "group": "Supply-Chain & Provenance",
+          "items": [
+            "Sigstore/Cosign",
+            "CycloneDX AI-BOM",
+            "Hugging Face Hub",
+            "ModelScan"
+          ]
+        },
+        {
+          "group": "Serving & GPU Optimization",
+          "items": [
+            "vLLM",
+            "NVIDIA MIG",
+            "TensorRT-LLM",
+            "GPTQ/AWQ quantization"
+          ]
+        },
+        {
+          "group": "FinOps & Observability",
+          "items": [
+            "Kubecost/OpenCost",
+            "Prometheus + Grafana",
+            "NVIDIA DCGM",
+            "Karpenter autoscaling"
+          ]
+        }
+      ],
+      "socs": [
+        "15-1299",
+        "15-1252"
+      ]
+    },
+    {
+      "code": "303",
+      "title": "Capstone Project",
+      "subtitle": "Design, build, deploy, and present one production-grade AI system",
+      "semester": 3,
+      "hours": 54,
+      "unitEquivalent": 3,
+      "prereq": "AIINFRA 302",
+      "next": null,
+      "description": "AIINFRA 303 is the culminating capstone of the AI Infrastructure and Architecture certificate sequence. Students design, build, deploy, and present a complete production-grade AI system of their own scoping — integrating compute, containers, cloud infrastructure, and a model or agent layer end to end. The course emphasizes professional practice: architecture documentation, infrastructure as code, CI/CD automation, security and observability, and a polished portfolio artifact suitable for employer review.",
+      "objectives": [
+        "Scope, plan, and document a production-grade AI infrastructure project with clear requirements, success metrics, and architecture decision records",
+        "Design and diagram a complete end-to-end AI system architecture integrating compute, containers, cloud, and the model/serving layer",
+        "Implement, containerize, and deploy the system to the cloud with infrastructure-as-code and an automated CI/CD pipeline",
+        "Integrate a model capability (serving, fine-tuning/adaptation, RAG, or an agent/MCP layer) with security guardrails, evaluation, and observability",
+        "Load-test, right-size, document, and present a reproducible, cost-instrumented capstone with a professional portfolio artifact and demo"
+      ],
+      "slos": [
+        "Scope, plan, and document a production-grade AI infrastructure project with clear requirements, success metrics, and architecture decision records.",
+        "Design and diagram a complete end-to-end AI system architecture integrating compute, containers, cloud, and the model/serving layer.",
+        "Implement, containerize, and deploy the system to the cloud with infrastructure-as-code and an automated CI/CD pipeline.",
+        "Integrate a model capability (serving, fine-tuning/adaptation, RAG, or an agent/MCP layer) with security guardrails, evaluation, and observability.",
+        "Load-test, right-size, document, and present a reproducible, cost-instrumented capstone with a professional portfolio artifact and demo."
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "title": "Capstone Kickoff: Scoping a Production AI System",
+          "summary": "Kicks off the capstone by having students scope a production-grade AI system of their own choosing."
+        },
+        {
+          "n": 2,
+          "title": "Requirements, Success Metrics, and Architecture Decision Records",
+          "summary": "Covers writing Architecture Decision Records and defining SLI/SLO success metrics for the capstone project."
+        },
+        {
+          "n": 3,
+          "title": "System Architecture and Full-Stack Infrastructure Design",
+          "summary": "Covers layered AI system architecture and producing C4-style context and container diagrams as code."
+        },
+        {
+          "n": 4,
+          "title": "Project Planning: Milestones, Risk, and a Reproducible Repository",
+          "summary": "Covers reproducibility practices, data versioning, a scaffolded repository, and a risk register with milestone roadmap."
+        },
+        {
+          "n": 5,
+          "title": "Building the Core: Containerized Services and Environments",
+          "summary": "Students build out the containerized core services and environments defined in the Week 3 architecture sketch."
+        },
+        {
+          "n": 6,
+          "title": "Deploying to the Cloud with Infrastructure as Code",
+          "summary": "Covers deploying the capstone's core services to the cloud using infrastructure as code."
+        },
+        {
+          "n": 7,
+          "title": "A CI/CD Pipeline for Your Capstone",
+          "summary": "Covers CI/CD concepts and building a working GitHub Actions pipeline that lints, tests, builds, and pushes a Docker image."
+        },
+        {
+          "n": 8,
+          "title": "Design Review and Working Vertical Slice",
+          "summary": "Midterm week: students deploy a working vertical slice to an orchestrator and present a design review against their ADRs, diagrams, and SLOs."
+        },
+        {
+          "n": 9,
+          "title": "The Model Layer: Serving, Adaptation, or RAG Integration",
+          "summary": "Students choose and build the model-layer strategy for their capstone: serving, fine-tuning/adaptation, or RAG."
+        },
+        {
+          "n": 10,
+          "title": "Adding Agentic and MCP or Retrieval Capabilities",
+          "summary": "Covers adding agentic, MCP, or retrieval capabilities on top of the capstone's model layer."
+        },
+        {
+          "n": 11,
+          "title": "Security, Guardrails, and Responsible-AI Hardening",
+          "summary": "Covers hardening the capstone with security controls, guardrails, and responsible-AI practices."
+        },
+        {
+          "n": 12,
+          "title": "Observability, Evaluation, and Cost Instrumentation",
+          "summary": "Covers instrumenting the capstone with Prometheus/Grafana observability, OpenCost cost allocation, and a RAGAS evaluation baseline."
+        },
+        {
+          "n": 13,
+          "title": "Load Testing, Right-Sizing, and Performance Tuning",
+          "summary": "Covers load testing the capstone system and right-sizing and tuning it for performance."
+        },
+        {
+          "n": 14,
+          "title": "Documentation, Runbooks, and Reproducibility",
+          "summary": "Covers writing documentation and runbooks that make the capstone reproducible for another operator."
+        },
+        {
+          "n": 15,
+          "title": "Portfolio Packaging, Demo Prep, and Technical Storytelling",
+          "summary": "Covers turning the capstone repo into a portfolio artifact with an architecture-diagram README and a rehearsed demo script."
+        },
+        {
+          "n": 16,
+          "title": "Final Capstone Submission, Presentation & Course Review",
+          "summary": "Final capstone week: students submit, present, and demo their completed production-grade AI system for course review."
+        }
+      ],
+      "midtermWeek": 8,
+      "capstoneWeek": 16,
+      "tools": [
+        {
+          "group": "Planning & Architecture",
+          "items": [
+            "draw.io",
+            "Excalidraw",
+            "Architecture Decision Records",
+            "GitHub Projects/Issues",
+            "Markdown docs"
+          ]
+        },
+        {
+          "group": "Containers, Cloud & IaC",
+          "items": [
+            "Docker",
+            "Docker Compose",
+            "Kubernetes (kind/minikube)",
+            "Helm",
+            "AWS/GCP/Azure free tiers",
+            "Terraform",
+            "LocalStack"
+          ]
+        },
+        {
+          "group": "CI/CD",
+          "items": [
+            "GitHub Actions",
+            "act"
+          ]
+        },
+        {
+          "group": "Model Layer",
+          "items": [
+            "vLLM/Ollama",
+            "Hugging Face/PEFT",
+            "Qdrant/pgvector",
+            "LangGraph/MCP"
+          ]
+        },
+        {
+          "group": "Security & Governance",
+          "items": [
+            "OWASP LLM Top 10",
+            "NeMo Guardrails/LLM Guard",
+            "Presidio",
+            "Model cards"
+          ]
+        },
+        {
+          "group": "Observability, FinOps & Portfolio",
+          "items": [
+            "Prometheus + Grafana",
+            "Langfuse/Arize Phoenix",
+            "OpenCost/Kubecost",
+            "GitHub README",
+            "Architecture diagrams",
+            "Screen recording",
+            "Slides"
+          ]
+        }
+      ],
+      "socs": [
+        "15-1252",
+        "15-2051",
+        "11-3021"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "code": "102",
+  "title": "Containerization & GPU-Aware Orchestration",
+  "subtitle": "Package, deploy, and scale AI workloads with Docker and Kubernetes",
+  "description": "This course teaches students to package, run, and orchestrate AI and Python applications using industry-standard containerization and orchestration tools. Students progress from building Docker images and GPU-enabled containers to deploying, scaling, and monitoring multi-container AI workloads on Kubernetes, including GPU-aware scheduling with the NVIDIA GPU Operator. By the end of the course, students can package a containerized AI application with Helm, provision its infrastructure with Terraform, and monitor it in production with Prometheus and Grafana.",
+  "objectives": [
+    "Explain containerization and build optimized Docker images for AI/Python applications.",
+    "Compose and run multi-container AI stacks locally, including GPU-enabled containers via the NVIDIA Container Toolkit.",
+    "Deploy and manage AI workloads on Kubernetes using pods, deployments, services, config, and persistent storage.",
+    "Configure resource limits, autoscaling, and GPU-aware scheduling with the NVIDIA GPU Operator.",
+    "Package, provision, monitor, and troubleshoot containerized AI systems using Helm, Terraform, and Prometheus/Grafana."
+  ],
+  "slos": [
+    "Explain containerization and build optimized Docker images for AI/Python applications.",
+    "Compose and run multi-container AI stacks locally, including GPU-enabled containers via the NVIDIA Container Toolkit.",
+    "Deploy and manage AI workloads on Kubernetes using pods, deployments, services, config, and persistent storage.",
+    "Configure resource limits, autoscaling, and GPU-aware scheduling with the NVIDIA GPU Operator.",
+    "Package, provision, monitor, and troubleshoot containerized AI systems using Helm, Terraform, and Prometheus/Grafana."
+  ],
+  "weeks": [
+    {"n": 1, "title": "Why Containers for AI: VMs, Images, and the Docker Model", "summary": "Introduces containerization concepts, contrasting VMs and container images, and the Docker model for packaging AI apps."},
+    {"n": 2, "title": "Docker Fundamentals: Running and Managing Containers", "summary": "Covers the container lifecycle — running, inspecting, executing into, and managing Docker containers with resource and port controls."},
+    {"n": 3, "title": "Building AI Container Images with Dockerfiles", "summary": "Teaches Dockerfile fundamentals, layer caching, multi-stage builds, and security practices for containerizing AI inference apps."},
+    {"n": 4, "title": "Docker Compose and Multi-Container AI Applications", "summary": "Uses Docker Compose to define and run multi-container AI application stacks locally."},
+    {"n": 5, "title": "GPU Containers and the NVIDIA Container Toolkit", "summary": "Covers running GPU-enabled containers using the NVIDIA Container Toolkit for AI workloads."},
+    {"n": 6, "title": "Container Registries, Tagging, and Image Security", "summary": "Covers pushing images to registries, semantic versioning tag strategy, and scanning images for vulnerabilities with Trivy."},
+    {"n": 7, "title": "Introduction to Kubernetes: Architecture and kubectl", "summary": "Introduces Kubernetes architecture and the kubectl command-line tool for interacting with a cluster."},
+    {"n": 8, "title": "Kubernetes Workloads: Deployments, Services, and Config", "summary": "Covers Kubernetes Deployments, Services, and configuration objects. This week includes the course midterm."},
+    {"n": 9, "title": "Deploying an AI Inference App to Kubernetes", "summary": "Applies Kubernetes fundamentals to deploy a real AI inference application onto a cluster."},
+    {"n": 10, "title": "Scaling and Resource Management with the Horizontal Pod Autoscaler", "summary": "Covers resource requests/limits and autoscaling AI workloads with the Kubernetes Horizontal Pod Autoscaler."},
+    {"n": 11, "title": "GPU-Aware Kubernetes with the NVIDIA GPU Operator", "summary": "Covers GPU-aware scheduling in Kubernetes using the NVIDIA GPU Operator and device plugin."},
+    {"n": 12, "title": "Storage, Volumes, and Persistence for AI Models and Data", "summary": "Covers Kubernetes storage, volumes, and persistence strategies for AI models and datasets."},
+    {"n": 13, "title": "Packaging Kubernetes Apps with Helm", "summary": "Teaches packaging and deploying Kubernetes applications as reusable charts with Helm."},
+    {"n": 14, "title": "Infrastructure as Code with Terraform", "summary": "Introduces Terraform's declarative model — providers, resources, and state — to provision a local Kubernetes cluster and app as code."},
+    {"n": 15, "title": "Monitoring, Logging, and Troubleshooting Containerized AI", "summary": "Covers installing the kube-prometheus-stack, reading GPU metrics via DCGM Exporter, and troubleshooting failing pods with kubectl."},
+    {"n": 16, "title": "Capstone Project & Course Review", "summary": "Students design, build, and present a final capstone project demonstrating mastery of the course's containerization and orchestration outcomes."}
+  ],
+  "tools": [
+    {"group": "Containers", "items": ["Docker", "Docker Compose", "NVIDIA Container Toolkit"]},
+    {"group": "Orchestration", "items": ["kubectl", "minikube/kind", "Deployments/Services/Ingress", "Horizontal Pod Autoscaler"]},
+    {"group": "GPU Scheduling", "items": ["NVIDIA GPU Operator", "Device plugin", "GPU resource requests", "DCGM Exporter"]},
+    {"group": "Packaging & Infrastructure as Code", "items": ["Helm", "Terraform"]},
+    {"group": "Registries & Security", "items": ["Docker Hub", "GitHub Container Registry", "Trivy image scanning"]},
+    {"group": "Monitoring", "items": ["Prometheus", "Grafana", "Liveness/readiness probes"]}
+  ]
+}
