@@ -7,7 +7,7 @@ SOCS = {  # from spec §8 — only the 8 verified SOCs
  "300":["15-1252","15-1299"], "301":["15-2051","15-1299"], "302":["15-1299","15-1252"],
  "303":["15-1252","15-2051","11-3021"]}
 def prereq(code):
-    return "none" if code == "100" else f"AIINFRA {ORDER[ORDER.index(code)-1]}"
+    return "none" if code == "100" else ORDER[ORDER.index(code)-1]
 def nxt(code):
     i = ORDER.index(code); return ORDER[i+1] if i+1 < len(ORDER) else None
 raw = {c: json.loads(pathlib.Path(f"site/data/_raw/{c}.json").read_text()) for c in ORDER}

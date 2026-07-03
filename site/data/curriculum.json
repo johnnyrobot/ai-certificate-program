@@ -220,7 +220,7 @@
       "semester": 1,
       "hours": 54,
       "unitEquivalent": 3,
-      "prereq": "AIINFRA 100",
+      "prereq": "100",
       "next": "102",
       "description": "A hands-on introduction to the developer toolkit behind modern AI work: a professional Python setup, VS Code, Git and GitHub, reproducible environments and package management (venv, conda, and the modern uv), the Jupyter and data-science stack (NumPy, pandas, scikit-learn), deep-learning tooling (PyTorch), testing and code quality, a first look at containers and cloud development environments, and a preview of experiment tracking with MLflow. Students finish able to build, version, and share AI projects and leave with a portfolio.",
       "objectives": [
@@ -382,7 +382,7 @@
       "semester": 1,
       "hours": 54,
       "unitEquivalent": 3,
-      "prereq": "AIINFRA 101",
+      "prereq": "101",
       "next": "200",
       "description": "This course teaches students to package, run, and orchestrate AI and Python applications using industry-standard containerization and orchestration tools. Students progress from building Docker images and GPU-enabled containers to deploying, scaling, and monitoring multi-container AI workloads on Kubernetes, including GPU-aware scheduling with the NVIDIA GPU Operator. By the end of the course, students can package a containerized AI application with Helm, provision its infrastructure with Terraform, and monitor it in production with Prometheus and Grafana.",
       "objectives": [
@@ -547,7 +547,7 @@
       "semester": 2,
       "hours": 54,
       "unitEquivalent": 3,
-      "prereq": "AIINFRA 102",
+      "prereq": "102",
       "next": "201",
       "description": "This course prepares students to deploy, automate, and operate AI/ML workloads on major cloud platforms. Students will provision cloud infrastructure across AWS, Azure, and Google Cloud, then build CI/CD pipelines with GitHub Actions to automatically test, build, and deploy containerized model services. The course concludes with MLOps foundations — experiment tracking, model registries, and infrastructure-as-code — culminating in an end-to-end, automated, cost-aware deployment pipeline for a machine learning application.",
       "objectives": [
@@ -715,7 +715,7 @@
       "semester": 2,
       "hours": 54,
       "unitEquivalent": 3,
-      "prereq": "AIINFRA 200",
+      "prereq": "200",
       "next": "202",
       "description": "This course trains learners to move beyond local, single-user model runners and into production-grade LLM inference serving. Students build a lean Linux and Docker foundation, then learn high-throughput serving engines such as vLLM, TGI, TensorRT-LLM, and SGLang alongside serving platforms like Triton, Ray Serve, and KServe. The back half of the course covers GPU orchestration on Kubernetes, including the GPU Operator, Dynamic Resource Allocation, MIG partitioning, multi-GPU parallelism, and disaggregated prefill/decode. Learners finish able to benchmark, monitor, autoscale, and right-size real inference workloads for cost and performance.",
       "objectives": [
@@ -891,7 +891,7 @@
       "semester": 2,
       "hours": 54,
       "unitEquivalent": 3,
-      "prereq": "AIINFRA 201",
+      "prereq": "201",
       "next": "300",
       "description": "This hands-on course teaches adult learners to adapt open-weight language models to specific tasks and domains without enterprise-scale hardware. Students learn to decide when to fine-tune versus prompt-engineer or use RAG, build and format instruction datasets, and run supervised and parameter-efficient fine-tuning (LoRA, QLoRA, PEFT) plus preference tuning with DPO using Hugging Face, Unsloth, and Axolotl. The course also covers quantization formats (GGUF, AWQ, GPTQ, FP8), KV-cache quantization, and knowledge distillation to shrink models for deployment. Learners evaluate adapted models, guard against overfitting and catastrophic forgetting, and address the licensing and ethics of model weights and training data.",
       "objectives": [
@@ -1073,7 +1073,7 @@
       "semester": 3,
       "hours": 54,
       "unitEquivalent": 3,
-      "prereq": "AIINFRA 202",
+      "prereq": "202",
       "next": "301",
       "description": "This course teaches learners to design, build, and deploy production-grade AI agents using leading provider APIs (OpenAI, Anthropic Claude, AWS Bedrock, Google Vertex, OpenRouter), code-first agent frameworks (LangGraph, CrewAI, OpenAI Agents SDK, Pydantic AI), and the Model Context Protocol (MCP) for standardized tool and context integration. Learners implement multi-agent orchestration, human-in-the-loop workflows, agent evaluation, observability, and guardrails while instrumenting cost, latency, and reliability across providers. The course culminates in a capstone deploying a secure, observable, multi-agent MCP-based system.",
       "objectives": [
@@ -1268,7 +1268,7 @@
       "semester": 3,
       "hours": 54,
       "unitEquivalent": 3,
-      "prereq": "AIINFRA 300",
+      "prereq": "300",
       "next": "302",
       "description": "This course prepares learners to design, evaluate, and operate retrieval-augmented generation systems using modern vector databases, hybrid search, and reranking techniques. Students build RAG evaluation pipelines with RAGAS and DeepEval as automated quality gates, then instrument production systems with tracing, prompt versioning, and drift monitoring using industry-standard LLMOps tooling. Emphasis is placed on hands-on labs that mirror real workplace tasks, from indexing strategy selection through cost-aware, observable deployment. Learners exit ready to support or own the retrieval and evaluation layer of an enterprise AI application.",
       "objectives": [
@@ -1440,7 +1440,7 @@
       "semester": 3,
       "hours": 54,
       "unitEquivalent": 3,
-      "prereq": "AIINFRA 301",
+      "prereq": "301",
       "next": "303",
       "description": "This hands-on course prepares learners to secure, govern, and financially optimize generative AI and LLM systems in production. Students master the OWASP LLM Top 10 (2025), build layered defenses against prompt injection and jailbreaks, and deploy modern guardrail frameworks such as NVIDIA NeMo Guardrails, Meta Llama Guard 4, and Microsoft Presidio for PII protection. The course also covers AI governance frameworks including the NIST AI RMF, ISO/IEC 42001, and the EU AI Act, along with responsible AI, bias, and fairness practices. Learners finish with GPU FinOps skills to measure and reduce inference cost per 1,000 requests using spot instances, fractional GPUs, quantization, and autoscaling economics.",
       "objectives": [
@@ -1645,7 +1645,7 @@
       "semester": 3,
       "hours": 54,
       "unitEquivalent": 3,
-      "prereq": "AIINFRA 302",
+      "prereq": "302",
       "next": null,
       "description": "AIINFRA 303 is the culminating capstone of the AI Infrastructure and Architecture certificate sequence. Students design, build, deploy, and present a complete production-grade AI system of their own scoping — integrating compute, containers, cloud infrastructure, and a model or agent layer end to end. The course emphasizes professional practice: architecture documentation, infrastructure as code, CI/CD automation, security and observability, and a polished portfolio artifact suitable for employer review.",
       "objectives": [
