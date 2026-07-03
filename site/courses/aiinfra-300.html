@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIINFRA 300: Agentic AI &amp; the Model Context Protocol (MCP)</title>
+  <meta name="description" content="Building, Securing, and Orchestrating Production AI Agents with MCP">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="../">AI Infrastructure &amp; Architecture</a>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-link is-active" href="../index.html#courses">Courses</a>
+      <a class="nav-link" href="../index.html#careers">Careers</a>
+      <a class="nav-link" href="../index.html#pathway">Pathway</a>
+      <a class="nav-cta" href="../index.html">Program overview</a>
+    </nav>
+  </header>
+  <main id="main">
+<section class="hero course-hero" aria-labelledby="course-title">
+      <div class="container hero-inner">
+        <a class="back" href="../index.html#courses">&larr; All courses</a>
+        <p class="eyebrow">// AIINFRA 300 &middot; Semester 3</p>
+        <h1 id="course-title">Agentic AI & the Model Context Protocol (MCP)</h1>
+        <p class="hero-lead">Building, Securing, and Orchestrating Production AI Agents with MCP</p>
+        <p class="hero-note">This course teaches learners to design, build, and deploy production-grade AI agents using leading provider APIs (OpenAI, Anthropic Claude, AWS Bedrock, Google Vertex, OpenRouter), code-first agent frameworks (LangGraph, CrewAI, OpenAI Agents SDK, Pydantic AI), and the Model Context Protocol (MCP) for standardized tool and context integration. Learners implement multi-agent orchestration, human-in-the-loop workflows, agent evaluation, observability, and guardrails while instrumenting cost, latency, and reliability across providers. The course culminates in a capstone deploying a secure, observable, multi-agent MCP-based system.</p>
+      </div>
+    </section>
+<div class="container">
+      <div class="meta-band">
+        <div class="m"><span class="k">Contact hours</span><span class="v">54 hrs</span></div>
+        <div class="m"><span class="k">Credit equivalent</span><span class="v">3-unit</span></div>
+        <div class="m"><span class="k">Prerequisite</span><span class="v">AIINFRA 202</span></div>
+        <div class="m"><span class="k">Length</span><span class="v">16 weeks</span></div>
+      </div>
+    </div>
+<section class="section" id="outcomes"><div class="container">
+  <div class="sec-head"><span class="kicker"><span class="idx">01</span>&nbsp;/ outcomes</span><h2>Outcomes</h2></div>
+  <div class="outcomes-grid">
+          <div>
+            <h3>Course objectives</h3>
+            <ol>
+            <li>Build agents that call multiple LLM provider APIs (OpenAI, Claude, Bedrock, Vertex, OpenRouter) with cost, latency, and observability instrumentation</li>
+            <li>Implement core agent patterns including tool calling, ReAct, planning, and memory/state management from first principles</li>
+            <li>Construct production agents using code-first frameworks such as LangGraph, CrewAI, OpenAI Agents SDK, and Pydantic AI</li>
+            <li>Design and deploy MCP servers exposing tools and resources with proper authentication and security controls</li>
+            <li>Orchestrate multi-agent systems with handoffs, human-in-the-loop checkpoints, and evaluate agent performance using observability tooling</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Student learning outcomes</h3>
+            <ul>
+            <li>Build and instrument agents that call OpenAI, Claude, Bedrock, Vertex, and OpenRouter for cost, latency, and reliability.</li>
+            <li>Implement tool calling, ReAct, planning, and memory/state management from first principles.</li>
+            <li>Construct production agents with LangGraph, CrewAI, the OpenAI Agents SDK, and Pydantic AI.</li>
+            <li>Design, secure, and deploy MCP servers that expose tools and resources with proper authentication.</li>
+            <li>Orchestrate multi-agent systems with handoffs and human-in-the-loop checkpoints, evaluated with observability tooling.</li>
+            </ul>
+          </div>
+        </div>
+</div></section>
+<section class="section" id="schedule"><div class="container">
+  <div class="sec-head"><span class="kicker"><span class="idx">02</span>&nbsp;/ schedule</span><h2>16-week schedule</h2></div>
+  <div class="sched-list"><div class="sched-row"><div class="wk">Wk 01</div>
+  <div class="body"><div class="t">Agentic AI Foundations and the Provider Landscape</div><div class="d">Introduces agentic AI concepts and surveys the provider landscape (OpenAI, Claude, Bedrock, Vertex, OpenRouter) that agents will call.</div></div></div><div class="sched-row"><div class="wk">Wk 02</div>
+  <div class="body"><div class="t">Tool Calling, ReAct, and Agent Planning Patterns</div><div class="d">Covers core agent patterns including tool calling, the ReAct loop, and planning strategies from first principles.</div></div></div><div class="sched-row"><div class="wk">Wk 03</div>
+  <div class="body"><div class="t">Memory and State Management for Agents</div><div class="d">Covers memory and state management techniques that let agents retain context across multi-step interactions.</div></div></div><div class="sched-row"><div class="wk">Wk 04</div>
+  <div class="body"><div class="t">OpenAI, Claude, and Multi-Provider API Integration</div><div class="d">Covers integrating OpenAI and Anthropic Claude APIs into agents alongside multi-provider integration patterns.</div></div></div><div class="sched-row"><div class="wk">Wk 05</div>
+  <div class="body"><div class="t">AWS Bedrock, Google Vertex AI, and OpenRouter Routing</div><div class="d">Covers integrating AWS Bedrock and Google Vertex AI and routing requests through OpenRouter.</div></div></div><div class="sched-row"><div class="wk">Wk 06</div>
+  <div class="body"><div class="t">Cost, Latency, and Observability Instrumentation</div><div class="d">Covers instrumenting agent calls for cost, latency, and observability across providers.</div></div></div><div class="sched-row"><div class="wk">Wk 07</div>
+  <div class="body"><div class="t">Code-First Agent Frameworks I: LangGraph and Pydantic AI</div><div class="d">Introduces building production agents with the code-first LangGraph and Pydantic AI frameworks.</div></div></div><div class="sched-row is-midterm"><div class="wk">Wk 08</div>
+  <div class="body"><div class="t">Code-First Agent Frameworks II: CrewAI and OpenAI Agents SDK</div><div class="d">Midterm week: covers CrewAI and the OpenAI Agents SDK alongside the course midterm assessment.</div><span class="flag">Midterm &middot; covers Wks 1&ndash;7</span></div></div><div class="sched-row"><div class="wk">Wk 09</div>
+  <div class="body"><div class="t">MCP Architecture Deep Dive</div><div class="d">Provides a deep dive into Model Context Protocol architecture for standardized tool and context integration.</div></div></div><div class="sched-row"><div class="wk">Wk 10</div>
+  <div class="body"><div class="t">Building MCP Servers: Tools and Resources</div><div class="d">Covers building MCP servers that expose tools and resources to agent clients.</div></div></div><div class="sched-row"><div class="wk">Wk 11</div>
+  <div class="body"><div class="t">MCP Authentication and Tool/Agent Security</div><div class="d">Covers MCP authentication mechanisms and security controls for tools and agents.</div></div></div><div class="sched-row"><div class="wk">Wk 12</div>
+  <div class="body"><div class="t">Multi-Agent Orchestration and Handoffs</div><div class="d">Covers orchestrating multi-agent systems, including handoffs between cooperating agents.</div></div></div><div class="sched-row"><div class="wk">Wk 13</div>
+  <div class="body"><div class="t">Human-in-the-Loop Workflows and Emerging Standards (A2A, AGENTS.md)</div><div class="d">Covers human-in-the-loop checkpoints alongside emerging agent standards such as A2A and AGENTS.md.</div></div></div><div class="sched-row"><div class="wk">Wk 14</div>
+  <div class="body"><div class="t">Agent Evaluation and Observability</div><div class="d">Covers evaluating agent performance and instrumenting agents with observability tooling.</div></div></div><div class="sched-row"><div class="wk">Wk 15</div>
+  <div class="body"><div class="t">Agent Deployment and Guardrails Introduction</div><div class="d">Covers deploying agents to production and introduces guardrails for safe agent behavior.</div></div></div><div class="sched-row is-capstone"><div class="wk">Wk 16</div>
+  <div class="body"><div class="t">Capstone Project &amp; Course Review</div><div class="d">Final capstone week: students deploy a secure, observable, multi-agent MCP-based system and review the course.</div><span class="flag">Capstone</span></div></div></div></div></section>
+<section class="section subtle" id="tools"><div class="container">
+  <div class="sec-head"><span class="kicker"><span class="idx">03</span>&nbsp;/ tools</span><h2>Tools &amp; frameworks</h2></div>
+  <div class="tools-list" style="display:flex;flex-direction:column;">
+        <div class="tool-group">
+          <span class="g">Provider APIs</span>
+          <div class="tags"><span class="tag">OpenAI API</span><span class="tag">Anthropic Claude API</span><span class="tag">AWS Bedrock</span><span class="tag">Google Vertex AI</span><span class="tag">OpenRouter</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Agent Frameworks</span>
+          <div class="tags"><span class="tag">LangGraph</span><span class="tag">CrewAI</span><span class="tag">OpenAI Agents SDK</span><span class="tag">Pydantic AI</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">MCP Tooling</span>
+          <div class="tags"><span class="tag">MCP Python SDK</span><span class="tag">MCP TypeScript SDK</span><span class="tag">MCP Inspector</span><span class="tag">Claude Desktop/Code MCP integration</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Languages/Runtimes</span>
+          <div class="tags"><span class="tag">Python 3.11+</span><span class="tag">Node.js/TypeScript</span><span class="tag">uv/pip</span><span class="tag">npm</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Observability</span>
+          <div class="tags"><span class="tag">LangSmith</span><span class="tag">Langfuse</span><span class="tag">OpenTelemetry</span><span class="tag">Helicone</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Cost/Latency Monitoring</span>
+          <div class="tags"><span class="tag">provider usage dashboards</span><span class="tag">token counting utilities</span><span class="tag">custom logging middleware</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Orchestration/Deployment</span>
+          <div class="tags"><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">FastAPI</span><span class="tag">ngrok/Cloudflare Tunnel</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Security</span>
+          <div class="tags"><span class="tag">OAuth 2.1</span><span class="tag">environment-based secrets management</span><span class="tag">API key vaults</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Dev Environment</span>
+          <div class="tags"><span class="tag">VS Code</span><span class="tag">Jupyter</span><span class="tag">Postman/Insomnia</span><span class="tag">git/GitHub</span></div>
+        </div>
+  </div>
+</div></section>
+<section class="section" id="course-careers"><div class="container">
+  <div class="careers-widget" data-socs="15-1252,15-1299">
+    <h3>What this course trains you for</h3>
+    <div class="roles">
+        <div class="role"><span class="r-t">Software Developers</span><span class="r-w">$179,292 median</span></div>
+        <div class="role"><span class="r-t">Computer Occupations, All Other</span><span class="r-w">$138,203 median</span></div>
+    </div>
+    <p class="note">CA median wages, 2024&ndash;34 projections (EDD/OEWS). See the full labor-market dashboard on the <a href="../index.html#careers">program overview</a>.</p>
+  </div>
+</div></section>
+<section class="section" id="course-nav"><div class="container">
+  <div class="hero-actions" style="justify-content:space-between;">
+    <a class="btn btn-ghost" href="aiinfra-202.html">&larr; AIINFRA 202: Model Adaptation — Fine-Tuning & Quantization</a>
+    <a class="btn btn-primary" href="aiinfra-301.html">AIINFRA 301: Production RAG & LLMOps — Observability and Evaluation &rarr;</a>
+  </div>
+  <p class="hero-note"><a href="../index.html">&larr; Back to program overview</a></p>
+</div></section>
+  </main>
+  <footer class="footer" id="connect" aria-labelledby="footer-title">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-head">
+          <span class="eyebrow">// stackable, non-credit, no cost</span>
+          <h2 id="footer-title">Build the systems <span class="grad">modern AI runs on.</span></h2>
+          <div class="footer-id">
+            <span class="who"><span class="n">Los Angeles Community College District</span><span class="r">AI Infrastructure and Architecture &middot; noncredit CDCP certificate</span></span>
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="Course quick links">
+          <a href="../courses/aiinfra-100.html">AIINFRA 100<span class="handle">Introduction to AI Systems & Infrastructure</span></a>
+          <a href="../courses/aiinfra-101.html">AIINFRA 101<span class="handle">Development Environments & Tools</span></a>
+          <a href="../courses/aiinfra-102.html">AIINFRA 102<span class="handle">Containerization & GPU-Aware Orchestration</span></a>
+          <a href="../courses/aiinfra-200.html">AIINFRA 200<span class="handle">Cloud Platforms for AI & CI/CD for ML</span></a>
+          <a href="../courses/aiinfra-201.html">AIINFRA 201<span class="handle">Production Inference Serving & GPU Orchestration</span></a>
+          <a href="../courses/aiinfra-202.html">AIINFRA 202<span class="handle">Model Adaptation — Fine-Tuning & Quantization</span></a>
+          <a href="../courses/aiinfra-300.html">AIINFRA 300<span class="handle">Agentic AI & the Model Context Protocol (MCP)</span></a>
+          <a href="../courses/aiinfra-301.html">AIINFRA 301<span class="handle">Production RAG & LLMOps — Observability and Evaluation</span></a>
+          <a href="../courses/aiinfra-302.html">AIINFRA 302<span class="handle">AI Security, Guardrails & Governance</span></a>
+          <a href="../courses/aiinfra-303.html">AIINFRA 303<span class="handle">Capstone Project</span></a>
+        </nav>
+      </div>
+      <div class="footer-bar">
+        <span>&copy; LACCD &middot; AI Infrastructure and Architecture certificate</span>
+        <span>built accessible &middot; WCAG 2.2 AA &middot; no cost tools &amp; free tiers</span>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="../app.js"></script>
+</body>
+</html>
